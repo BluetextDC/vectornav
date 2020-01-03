@@ -1,0 +1,23 @@
+[
+    "SitefinityWebApp.dll",
+    "SitefinityWebApp.ResourcePackages.Bootstrap4.dll",
+    "Telerik.Sitefinity.Frontend.Blogs.dll",
+    "Telerik.Sitefinity.Frontend.Card.dll",
+    "Telerik.Sitefinity.Frontend.Comments.dll",
+    "Telerik.Sitefinity.Frontend.ContentBlock.dll",
+    "Telerik.Sitefinity.Frontend.dll",
+    "Telerik.Sitefinity.Frontend.DynamicContent.dll",
+    "Telerik.Sitefinity.Frontend.EmailCampaigns.dll",
+    "Telerik.Sitefinity.Frontend.Events.dll",
+    "Telerik.Sitefinity.Frontend.Forms.dll",
+    "Telerik.Sitefinity.Frontend.Identity.dll",
+    "Telerik.Sitefinity.Frontend.InlineClientAssets.dll",
+    "Telerik.Sitefinity.Frontend.Lists.dll",
+    "Telerik.Sitefinity.Frontend.Media.dll",
+    "Telerik.Sitefinity.Frontend.Navigation.dll",
+    "Telerik.Sitefinity.Frontend.News.dll",
+    "Telerik.Sitefinity.Frontend.Publishing.dll",
+    "Telerik.Sitefinity.Frontend.Search.dll",
+    "Telerik.Sitefinity.Frontend.Taxonomies.dll",
+    "Telerik.Sitefinity.MobileFormats.dll"
+]

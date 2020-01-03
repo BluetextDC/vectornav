@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #b6b6b6;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="16" height="16"/>
+    </clipPath>
+  </defs>
+  <g id="Symbol_24_58" data-name="Symbol 24 – 58" class="cls-2">
+    <path id="Path_10" data-name="Path 10" class="cls-3" d="M8,0,6.545,1.455l5.506,5.506H0V9.039H12.052L6.545,14.545,8,16l8-8Z"/>
+  </g>
+</svg>

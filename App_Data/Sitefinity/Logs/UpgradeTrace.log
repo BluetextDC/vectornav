@@ -1,0 +1,202 @@
+----------------------------------------
+Timestamp: 1/2/2020 1:35:33 PM
+
+Message: Db Migration Complexity: Trivial
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/2/2020 1:35:33 PM
+
+Message: Adding a foreign key constraint(s) to a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/2/2020 1:35:33 PM
+
+Message: Adding a new table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/2/2020 1:35:33 PM
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.sf_ec_prdct_bt
+CREATE TABLE [sf_ec_prdct_bt] (
+    [id] uniqueidentifier NOT NULL,
+    CONSTRAINT [pk_sf_ec_prdct_bt] PRIMARY KEY ([id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/2/2020 1:35:33 PM
+
+Message: ALTER TABLE [sf_ec_prdct_bt] ADD CONSTRAINT [ref_sf_c_prdct_bt_sf__1CD9B256] FOREIGN KEY ([id]) REFERENCES [sf_ec_product]([id]) ON DELETE CASCADE
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03-01-2020 5:08:09 AM
+
+Message: Initial install FAILED: Telerik.OpenAccess.RT.sql.SQLException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). See the error log for more details.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03-01-2020 5:09:22 AM
+
+Message: Initial install FAILED: Telerik.OpenAccess.RT.sql.SQLException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). See the error log for more details.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03-01-2020 5:10:35 AM
+
+Message: Initial install FAILED: Telerik.OpenAccess.RT.sql.SQLException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). See the error log for more details.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03-01-2020 5:12:18 AM
+
+Message: Initial install FAILED: Telerik.OpenAccess.RT.sql.SQLException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). See the error log for more details.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03-01-2020 5:13:32 AM
+
+Message: Initial install FAILED: Telerik.OpenAccess.RT.sql.SQLException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). See the error log for more details.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03-01-2020 5:14:45 AM
+
+Message: Initial install FAILED: Telerik.OpenAccess.RT.sql.SQLException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). See the error log for more details.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 7:37:30 AM
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 7:37:30 AM
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 7:37:30 AM
+
+Message: -- add column for field sf_ec_prdct_bt.GynoRange
+ALTER TABLE [sf_ec_prdct_bt] ADD [gyno_range] DECIMAL(20) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: Db Migration Complexity: Complex
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: Removing a column(s) from an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- add column for field sf_ec_prdct_bt.VelocityWalk
+ALTER TABLE [sf_ec_prdct_bt] ADD [velocity_walk] DECIMAL(20,2) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- add column for field sf_ec_prdct_bt.GyroRange
+ALTER TABLE [sf_ec_prdct_bt] ADD [gyro_range] DECIMAL(20) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- add column for field sf_ec_prdct_bt.GyroBios
+ALTER TABLE [sf_ec_prdct_bt] ADD [gyro_bios] DECIMAL(20) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- dropping unknown column [gyno_range]
+ALTER TABLE [sf_ec_prdct_bt] DROP COLUMN [gyno_range]
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- add column for field sf_ec_prdct_bt.AngularWalk
+ALTER TABLE [sf_ec_prdct_bt] ADD [angular_walk] DECIMAL(20,2) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- add column for field sf_ec_prdct_bt.AccelRange
+ALTER TABLE [sf_ec_prdct_bt] ADD [accel_range] DECIMAL(20) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:07:48 AM
+
+Message: -- add column for field sf_ec_prdct_bt.AccelBios
+ALTER TABLE [sf_ec_prdct_bt] ADD [accel_bios] DECIMAL(20) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:33:02 AM
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:33:02 AM
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/3/2020 10:33:02 AM
+
+Message: -- add column for field sf_ec_prdct_bt.DocumentURL
+ALTER TABLE [sf_ec_prdct_bt] ADD [document_u_r_l] NVARCHAR(255) NULL
+
+
+----------------------------------------
