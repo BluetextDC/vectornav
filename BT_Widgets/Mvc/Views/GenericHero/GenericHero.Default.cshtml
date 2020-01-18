@@ -1,0 +1,38 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.GenericHero.GenericHeroViewModel
+   <section class="short_banner_sec no_bg_image">
+        <div class="container">
+            <div class="content">
+                <h1 class="text-uppercase">@Model.Title_JpVM</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    @*<section class="width_promo_sec">
+            <div class="container">
+                <div class="heading_h2 text-center max100">
+                    <h2 class="text-uppercase text-white"></h2>
+                    <p class="text-white">Subtitle </p>
+                </div>
+
+                <div>
+                    @if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
+                    {
+                        <img src="@Model.SelectedSizeUrl" title="@Model.ImageTitle" alt="@Model.ImageAlternativeText" />
+                    }
+                </div>
+
+            </div>
+        </section>
+        *@
+        <style>
+        .short_banner_sec {
+            background: url(@Model.SelectedSizeUrl) no-repeat center;
+        }
+
+        </style>

@@ -1,0 +1,2710 @@
+----------------------------------------
+ActivityId: c09c960e-ff94-4593-8af5-236e3fb20078
+
+Timestamp: 1/16/2020 10:05:24 AM
+
+Message: HandlingInstanceID: b63e23e2-2e66-43cb-9aa8-7134ca2827a8
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/16/2020 15:35:24
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/16/2020 10:05:24 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236424674280126
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.DefaultPhoto.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236424674280126
+
+ProcessId: 8032
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:27240
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 6ae6dfe8-efec-4f42-ac13-eb2b0f6ef1c8
+
+Timestamp: 1/16/2020 10:12:40 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236424674280126
+
+ProcessId: 8032
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:34044
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 16-01-2020 11:33:04 AM
+
+Message: HandlingInstanceID: edc38c98-1732-4cd1-a1e6-207c712fc65f
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/16/2020 17:03:04
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 16-01-2020 11:33:04 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-7
+
+Win32 ThreadId:35756
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 16-01-2020 11:33:04 AM
+
+Message: HandlingInstanceID: 2703482c-5d94-48b7-86d5-20a08d36b497
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/16/2020 17:03:04
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 16-01-2020 11:33:04 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-4
+
+Win32 ThreadId:14228
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 16-01-2020 11:33:04 AM
+
+Message: HandlingInstanceID: 5197b36e-5799-4179-bc8a-6b1c716b8f9a
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/16/2020 17:03:04
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 16-01-2020 11:33:04 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-1
+
+Win32 ThreadId:30064
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 16-01-2020 11:33:05 AM
+
+Message: HandlingInstanceID: 6809afdd-85fb-4acb-aca1-dc60770fc651
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/16/2020 17:03:05
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 16-01-2020 11:33:05 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-3
+
+Win32 ThreadId:15644
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 16-01-2020 11:33:06 AM
+
+Message: HandlingInstanceID: 1675367e-1b5f-4596-8716-02159a258fd6
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/16/2020 17:03:06
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 16-01-2020 11:33:06 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-3
+
+Win32 ThreadId:15644
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: b8010e79-650e-42d9-af1b-87870b2903aa
+
+Timestamp: 1/16/2020 11:33:11 AM
+
+Message: HandlingInstanceID: 7d365ea1-81b5-4740-98ac-05ccfbbce013
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/16/2020 17:03:11
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Path '/Mvc/Views/FullwidthFiftyFiftyCarousel/Index.cshtml' is forbidden.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ProcessRequest(System.Web.HttpContext)
+HResult : -2147467259
+Stack Trace :    at System.Web.HttpForbiddenHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/16/2020 11:33:11 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/Mvc/Views/FullwidthFiftyFiftyCarousel/Index.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:16376
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 441d9115-0eef-4124-8dea-bcc017974db8
+
+Timestamp: 1/16/2020 11:33:42 AM
+
+Message: HandlingInstanceID: 46925d1c-d5f8-4e61-982c-c7d9746fee78
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/16/2020 17:03:42
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/16/2020 11:33:42 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132236479687289240
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.DefaultPhoto.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:30748
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 86da8903-333e-475b-9678-17bea8c30ed4
+
+Timestamp: 1/16/2020 11:34:38 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132236479687289240
+
+ProcessId: 33972
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:20796
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 47dea765-6d90-4345-8230-fd17afe3ce57
+
+Timestamp: 1/17/2020 5:13:41 AM
+
+Message: HandlingInstanceID: feddc141-6f56-4c8c-9eaf-d2096f081370
+An exception of type 'System.ArgumentException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 10:43:41
+Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Type "Telerik.Sitefinity.DynamicTypes.Model.MDL_BT.Full_width_50_Carousel" cannot be resolved.
+Source : Telerik.Sitefinity.Utilities
+Help link : 
+ParamName : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Type GetType(System.String, Boolean, Boolean)
+HResult : -2147024809
+Stack Trace :    at Telerik.Sitefinity.Utilities.TypeConverters.TypeResolutionService.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Telerik.Sitefinity.Utilities.TypeConverters.TypeResolutionService.GetType(String name)
+   at Telerik.Sitefinity.Utilities.TypeConverters.TypeResolutionService.ResolveType(String name)
+   at SitefinityWebApp.Mvc.Models.FullwidthFiftyFiftyCarouselModel.GetList() in D:\Jaypal\Projects\VectorNAV\BorisCode\Code\Mvc\Models\FullwidthFiftyFiftyCarouselModel.cs:line 32
+   at ASP._MVC_Views_FullwidthFiftyFiftyCarousel_Index_cshtml.Execute() in D:\Jaypal\Projects\VectorNAV\BorisCode\Code\obj\CodeGen\MVC\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml:line 16
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at RazorGenerator.Mvc.PrecompiledMvcView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Routing.FeatherActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 5:13:41 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132237115353951350
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/rnd/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132237115353951350
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12324
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 75d93c45-4d9d-4e61-b865-8a871edac1f2
+
+Timestamp: 1/17/2020 5:13:42 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132237115353951350
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:7664
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 0958f815-30e3-4169-98f2-f25ef76fd65e
+
+Timestamp: 1/17/2020 5:15:08 AM
+
+Message: HandlingInstanceID: 10d6a0b4-474f-4b70-900f-46245dfafe18
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 10:45:08
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 5:15:08 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-132237115353951350
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.NewContentEditingAnnouncement.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132237115353951350
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:7272
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 5:16:21 AM
+
+Message: HandlingInstanceID: 71c556f7-e5b4-4031-b6f2-081b45ec895f
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/17/2020 10:46:21
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\Code\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 5:16:21 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-7
+
+Win32 ThreadId:13724
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 5:16:21 AM
+
+Message: HandlingInstanceID: 6d8e1e9b-37a0-49d2-b29e-6829c18a861e
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/17/2020 10:46:21
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\Code\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 5:16:21 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-5
+
+Win32 ThreadId:5212
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 5:16:22 AM
+
+Message: HandlingInstanceID: 2ab2df5b-2f37-4c4b-a323-639885632176
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 10:46:22
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 5:16:22 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-1
+
+Win32 ThreadId:14064
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 5:16:22 AM
+
+Message: HandlingInstanceID: 4b54517b-0e98-46ce-9e07-27ba3a7a4bbe
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 10:46:22
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 5:16:22 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-4
+
+Win32 ThreadId:4060
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 5:16:23 AM
+
+Message: HandlingInstanceID: be13c9f9-2e89-48ff-8f04-97d23d79cd2a
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/17/2020 10:46:23
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\Code\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 5:16:23 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-2
+
+Win32 ThreadId:13680
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 5:16:23 AM
+
+Message: HandlingInstanceID: 5c8f6afd-6346-430b-b4f8-aa5264cc3c58
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/17/2020 10:46:23
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\Code\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 5:16:23 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-3
+
+Win32 ThreadId:11020
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 2fdb7e01-78d4-40f3-a8b5-4490d9e372ed
+
+Timestamp: 1/17/2020 5:18:40 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12512
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: ace6be7a-7fb2-4ba1-8060-ea1c037f25a2
+
+Timestamp: 1/17/2020 5:19:37 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:14216
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: a7e6dad0-2831-44d4-b45f-813d6c6c5109
+
+Timestamp: 1/17/2020 5:19:37 AM
+
+Message: HandlingInstanceID: 1e80740c-d14e-4f2e-8fed-b5cd94f95d17
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 10:49:37
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 5:19:37 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Themes.Light.Images.PageTemplates.NoTemplate.gif
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:6768
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: bc9db43f-25b8-4a18-aacd-e36924cb1bd4
+
+Timestamp: 1/17/2020 5:20:44 AM
+
+Message: HandlingInstanceID: 870f6610-7bef-4317-84ff-01a941369500
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 10:50:44
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 5:20:44 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.DefaultPhoto.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:6268
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 804228d8-9d71-4945-b749-6ac06d9e8ebe
+
+Timestamp: 1/17/2020 5:20:44 AM
+
+Message: HandlingInstanceID: 7622a2d7-23c8-4449-936e-d95b5c1580d5
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 10:50:44
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 5:20:44 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.NewContentEditingAnnouncement.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:13708
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 557757bc-8081-4bbe-a34e-60377d37d62e
+
+Timestamp: 1/17/2020 5:35:35 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:13092
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 4694fe7f-209f-4e13-949d-ba45928a224b
+
+Timestamp: 1/17/2020 5:35:35 AM
+
+Message: HandlingInstanceID: fa6b33b2-7bd5-4a16-9c33-5f347c88d039
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 11:05:35
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 5:35:35 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-132237117683400907
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.DefaultPhoto.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:9204
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: ecc00204-8366-450f-b431-4688a8d1d815
+
+Timestamp: 1/17/2020 5:44:09 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12696
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 57fb234c-a4f7-4dd5-8998-3769b04d5cab
+
+Timestamp: 1/17/2020 5:49:52 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:584
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 084c4552-f83b-4dcf-b57b-f6d07cb988b3
+
+Timestamp: 1/17/2020 5:49:52 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-2-132237117683400907
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:2960
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 41ac93f4-207f-4516-a13d-f96b5a46349d
+
+Timestamp: 1/17/2020 6:23:04 AM
+
+Message: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Mapping.MapMiddleware.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SecurityTokenServiceMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Authentication.Owin.SitefinityAuthenticationMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.SslOffloaderMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.HttpsRedirectMiddleware.<Invoke>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Telerik.Sitefinity.Owin.Extensions.GlobalExceptionMiddleware.<Invoke>d__1.MoveNext()
+
+Category: ErrorLog
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12964
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 1/17/2020 6:23:31 AM
+
+Message: HandlingInstanceID: eecfd53c-9079-4e46-b66c-b09a8ef2cb5d
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+01/17/2020 11:53:31
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The view 'HomePageHero.Default' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/HomePageHero/HomePageHero.Default.cshtml
+~/Views/Shared/HomePageHero.Default.cshtml
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/HomePageHero/HomePageHero.Default.cshtml
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/Shared/HomePageHero.Default.cshtml
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/HomePageHero/HomePageHero.Default.cshtml
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/Shared/HomePageHero.Default.cshtml
+~/Views/HomePageHero/HomePageHero.Default.aspx
+~/Views/HomePageHero/HomePageHero.Default.ascx
+~/Views/Shared/HomePageHero.Default.aspx
+~/Views/Shared/HomePageHero.Default.ascx
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/HomePageHero/HomePageHero.Default.aspx#Bootstrap4.aspx
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/HomePageHero/HomePageHero.Default.ascx#Bootstrap4.ascx
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/Shared/HomePageHero.Default.aspx#Bootstrap4.aspx
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/Shared/HomePageHero.Default.ascx#Bootstrap4.ascx
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/HomePageHero/HomePageHero.Default.aspx#Bootstrap4.aspx
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/HomePageHero/HomePageHero.Default.ascx#Bootstrap4.ascx
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/Shared/HomePageHero.Default.aspx#Bootstrap4.aspx
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/Shared/HomePageHero.Default.ascx#Bootstrap4.ascx
+~/Views/HomePageHero/HomePageHero.Default.vbhtml
+~/Views/Shared/HomePageHero.Default.vbhtml
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/HomePageHero/HomePageHero.Default.cshtml#Bootstrap4.cshtml
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/HomePageHero/HomePageHero.Default.vbhtml#Bootstrap4.vbhtml
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/Shared/HomePageHero.Default.cshtml#Bootstrap4.cshtml
+~/Frontend-Assembly/BT_Widgets/Mvc/Views/Shared/HomePageHero.Default.vbhtml#Bootstrap4.vbhtml
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/HomePageHero/HomePageHero.Default.cshtml#Bootstrap4.cshtml
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/HomePageHero/HomePageHero.Default.vbhtml#Bootstrap4.vbhtml
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/Shared/HomePageHero.Default.cshtml#Bootstrap4.cshtml
+~/Frontend-Assembly/Telerik.Sitefinity.Frontend/Mvc/Views/Shared/HomePageHero.Default.vbhtml#Bootstrap4.vbhtml
+Source : System.Web.Mvc
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.Mvc.ViewEngineResult FindView(System.Web.Mvc.ControllerContext)
+HResult : -2146233079
+Stack Trace :    at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Routing.FeatherActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 6:23:31 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/rnd/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:14408
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 1/17/2020 6:26:11 AM
+
+Message: HandlingInstanceID: fb38b41b-c961-42f1-b50a-055e67f1143c
+An exception of type 'System.ArgumentException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 11:56:11
+Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Type "Telerik.Sitefinity.DynamicTypes.Model.MDL_BT.Full_width_50_Carousel" cannot be resolved.
+Source : Telerik.Sitefinity.Utilities
+Help link : 
+ParamName : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Type GetType(System.String, Boolean, Boolean)
+HResult : -2147024809
+Stack Trace :    at Telerik.Sitefinity.Utilities.TypeConverters.TypeResolutionService.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Telerik.Sitefinity.Utilities.TypeConverters.TypeResolutionService.GetType(String name)
+   at Telerik.Sitefinity.Utilities.TypeConverters.TypeResolutionService.ResolveType(String name)
+   at SitefinityWebApp.Mvc.Models.FullwidthFiftyFiftyCarouselModel.GetList() in D:\Jaypal\Projects\VectorNAV\BorisCode\Code\Mvc\Models\FullwidthFiftyFiftyCarouselModel.cs:line 32
+   at ASP._MVC_Views_FullwidthFiftyFiftyCarousel_Index_cshtml.Execute() in D:\Jaypal\Projects\VectorNAV\BorisCode\Code\obj\CodeGen\MVC\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml:line 16
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at RazorGenerator.Mvc.PrecompiledMvcView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Routing.FeatherActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 6:26:11 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/rnd/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:14408
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:08 AM
+
+Message: HandlingInstanceID: c02d1d2a-47e0-4df8-8131-7cbd7b4e5cf3
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:08
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:08 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-4
+
+Win32 ThreadId:7900
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:08 AM
+
+Message: HandlingInstanceID: 4c340f25-35ee-4cef-9ebb-9059d24d993e
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:08
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:08 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-7
+
+Win32 ThreadId:2176
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:09 AM
+
+Message: HandlingInstanceID: e2c11cc2-bd46-409a-91bc-1296f004dbbf
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:09
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:09 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-1
+
+Win32 ThreadId:1328
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:40 AM
+
+Message: HandlingInstanceID: 278b9f1c-1cbb-4041-abeb-54b79821e576
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:40
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:40 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-8
+
+Win32 ThreadId:14816
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:40 AM
+
+Message: HandlingInstanceID: 9576ca9a-77f2-4ef9-8f7e-7d761038b510
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:40
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:40 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-3
+
+Win32 ThreadId:6332
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:49 AM
+
+Message: HandlingInstanceID: 06775624-1e83-4b03-8278-0ba58dbdc887
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:49
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:49 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-5
+
+Win32 ThreadId:3880
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:27:54 AM
+
+Message: HandlingInstanceID: f2d9de16-4926-4d92-8ede-6b371fa9b051
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 12:57:54
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:27:54 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-4
+
+Win32 ThreadId:7900
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:39:49 AM
+
+Message: HandlingInstanceID: 6569888c-6849-41ff-847d-90f3c3dd460b
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 13:09:49
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:39:49 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-1
+
+Win32 ThreadId:1328
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 17-01-2020 7:39:49 AM
+
+Message: HandlingInstanceID: 1fc89c21-5ecf-425d-971b-78cb5afdbb71
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/17/2020 13:09:49
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 17-01-2020 7:39:49 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-2
+
+Win32 ThreadId:16328
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: ce94cba3-0445-43d5-82c5-5ae6e87266dc
+
+Timestamp: 1/17/2020 7:40:12 AM
+
+Message: HandlingInstanceID: 726658cd-692a-42a8-b22b-50aafc6707af
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 13:10:12
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 7:40:12 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.NewContentEditingAnnouncement.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:13468
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 66fef166-bc4b-4e57-a794-c0db0cb8e54f
+
+Timestamp: 1/17/2020 7:40:12 AM
+
+Message: HandlingInstanceID: 0a88506c-921a-401a-98a2-cf546e06145b
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 13:10:12
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 7:40:12 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.DefaultPhoto.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12964
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: c5376d29-d790-4288-8583-33b259c9399d
+
+Timestamp: 1/17/2020 7:46:28 AM
+
+Message: HandlingInstanceID: 21d59efc-af86-4404-8b13-bbc561319fd3
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 13:16:28
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 7:46:28 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.DefaultPhoto.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8572
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 7d74fc6e-07dc-426b-ab42-a6b8f5fa93ab
+
+Timestamp: 1/17/2020 7:46:28 AM
+
+Message: HandlingInstanceID: aead08de-c5a3-461b-b01d-8fcab7f2aa66
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+01/17/2020 13:16:28
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The remote host closed the connection. The error code is 0x800704CD.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147023667
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void RaiseCommunicationError(Int32, Boolean)
+HResult : -2147023667
+Stack Trace :    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.Flush()
+   at System.Web.HttpWriter.WriteFromStream(Byte[] data, Int32 offset, Int32 size)
+   at System.Web.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContextBase context)
+   at Telerik.Sitefinity.Web.ResourceImagesHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 1/17/2020 7:46:28 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-3-132237144881838451
+ThreadIdentity : boris@bluetext.com
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/SFRes/images/Telerik.Sitefinity.Resources/Images.NewContentEditingAnnouncement.png
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-3-132237144881838451
+
+ProcessId: 2160
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:15528
+
+Extended Properties: 
+----------------------------------------

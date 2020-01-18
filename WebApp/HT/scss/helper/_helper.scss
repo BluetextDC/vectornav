@@ -1,0 +1,438 @@
+body,
+html{
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+    font-family: $regular-font;
+    font-size: 18px;
+    @include media-breakpoint-down(md){
+        font-size: 16px;
+    }
+}
+
+a {
+    @include transition (linear 0.3s);
+    outline: none;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+/*Btns*/
+.btn{
+    min-width:182px;
+    min-height: 47px;
+    font-size: 22px;
+    font-family: $bold-font;
+    border-radius: 0;
+    padding: 4px 10px;
+
+    &:hover,&:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    &.btn_border1{
+        border:3px solid $red;
+        color: $white;
+        &:hover,&:focus{
+            color: $white;
+            background-color: $red;
+        }
+    }
+    &.btn_border2{
+        border:3px solid $red;
+        color: $red;
+        &:hover,&:focus{
+            color: $white;
+            background-color: $red;
+        }
+    }
+    &.btn_border3{
+        border:3px solid $white;
+        color: $white;
+        &:hover,&:focus{
+            color: $dark-charcoal;
+            background-color: $white;
+        }
+    }
+
+    @include desktop-1399{
+        min-width:162px;
+        min-height: 45px;
+        font-size: 20px;
+        padding: 3px 7px;
+    }
+    @include desktop-1280{
+        min-width:152px;
+        min-height: 40px;
+        padding: 2px 5px;
+    }
+    @include media-breakpoint-down(sm){
+        min-width:148px;
+        min-height: 38px;
+        padding: 1px 5px;
+    }
+}
+
+.pagination{
+    margin-top: 65px;
+    margin-bottom: 0;
+    .page-item{
+        &.prevnext{
+            .page-link{
+                font-size: 22px;
+                font-family: $bold-font;
+            }
+        }
+        &.active{
+            .page-link{
+                font-family: $bold-font;
+                background-color: $white;
+            }
+        }
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        .page-link{
+            padding: 0;
+            border:none;
+            font-size: 18px;
+            color: $dark-charcoal;
+            &:focus,&:hover{
+                outline: none;
+                box-shadow: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm){
+        margin-top: 15px;
+    }
+}
+
+/*Checkbox*/
+.custom-checkbox{
+    padding-left: 45px;
+    &.short_checkbox{
+        padding-left: 35px;
+        .custom-control-label{
+            font-size: 15px;
+            &:before,&:after{
+                width: 20px;
+                height: 20px;
+                left: -35px;
+            }
+        }
+        .custom-control-input{
+            &:checked{
+                ~.custom-control-label{
+                    &:after{
+                        background-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &.custom-control-inline{
+        margin-right: 28px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    .custom-control-label{
+        font-size: 21px;
+        cursor: pointer;
+        &:before{
+            border:2px solid $red;
+            border-radius: 0px;
+        }
+        &:before,&:after{
+            width: 30px;
+            height: 30px;
+            left: -45px;
+            top: 1px;
+        }
+    }
+    .custom-control-input{
+        &:focus{
+            ~.custom-control-label{
+                &:before{
+                    box-shadow: none;
+                }
+            }
+            &:not(:checked){
+                ~.custom-control-label{
+                    &:before{
+                        border-color: $red;
+                    }
+                }
+            }
+        }
+        &:checked{
+            ~.custom-control-label{
+                &:before{
+                    border-color: $red;
+                    background-color: transparent;
+                }
+                &:after {
+                    background: url("#{$imageurl}/check.svg") no-repeat center center;
+                }
+            }
+        }
+        &:not(:disabled){
+            &:active{
+                ~.custom-control-label{
+                    &:before{
+                        background-color: transparent;
+                        border-color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    @include desktop-1440{
+        padding-left: 35px;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        .custom-control-label{
+            font-size: 19px;
+            &:before,
+            &:after{
+                width: 25px;
+                height: 25px;
+                left: -35px;
+                top: 2px;
+            }
+        }
+        .custom-control-input{
+            &:checked{
+                ~.custom-control-label{
+                    &:after{
+                        background-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        padding-left: 35px;
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 17px;
+        }
+        &.custom-control-inline{
+            margin-right: 0px;
+        }
+        &.short_checkbox{
+            .custom-control-label{
+                &:before,
+                &:after{
+                    width: 22px;
+                    height: 22px;
+                    left: -35px;
+                }
+            }
+        }
+        .custom-control-label{
+            font-size: 17px;
+            &:before,
+            &:after{
+                width: 22px;
+                height: 22px;
+                left: -35px;
+                top: 2px;
+            }
+        }
+        .custom-control-input{
+            &:checked{
+                ~.custom-control-label{
+                    &:after{
+                        background-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Container*/
+.container{
+    @media(min-width:1200px){
+        max-width:1180px;
+    }
+    @media(min-width:1400px){
+        max-width:1300px;
+    } 
+    @media(min-width:1600px){
+        max-width:1500px;
+    }
+    @media(min-width:1681px){
+        max-width:1640px;
+    }
+    @include media-breakpoint-down(sm){
+        max-width: 100%;
+    }
+}
+
+/*Form Control for inputs*/
+.bootstrap-select{
+    height: auto;
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 13px;
+        background-color: $white;
+        position: absolute;
+        z-index: 1111;
+        bottom: -4px;
+    }
+    &:before{
+        left: 0;
+    }
+    &:after{
+        right:0;
+    }
+    &.show{
+        background-color: $white;
+        box-shadow: 0px 5px 20px rgba($black, 0.25);
+        .dropdown-toggle{
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .dropdown-toggle{
+        background-color: transparent !important;
+        z-index: 111;
+        padding: 20px 27px 10px;
+        border: none;
+        border-bottom: 3px solid $red !important;;
+        font-size: 20px;
+        min-width: auto;
+        min-height: auto;
+        font-family: $regular-font;
+        -webkit-appearance: none;
+        color: $dark-charcoal !important;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        &:focus,&:active,&.active{
+            outline: none !important;
+        }
+        &:after{
+            border-top: .4em solid $red;
+            border-right: .4em solid transparent;
+            border-left: .4em solid transparent;
+            border-bottom: none;
+            transition: 0.2s all;
+        }
+    }
+    .dropdown-menu{
+        padding: 20px 0;
+        box-shadow: 0px 5px 20px rgba($black, 0.25);
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        .inner{
+            &.show{
+                .dropdown-menu{
+                    padding: 0;
+                }
+            }
+        }
+        li{
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+            a{
+                background-color: transparent;
+                padding: 5px 27px;
+                font-size: 16px;
+                color: $dark-charcoal;
+                font-family: $regular-font;
+                &:hover{
+                    background-color: $light-gray;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .dropdown-toggle{
+            padding: 15px 20px 10px;
+            font-size: 18px;
+        }
+        .dropdown-menu{
+            padding: 15px 0;
+            li{
+                a{
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &:before,
+        &:after{
+            width: auto;
+        }
+    }
+}
+
+.form-control{
+    font-size: 25px;
+    font-family: $bold-font;
+    line-height: 30px;
+    color: $dark-charcoal;
+    padding: 0px 0 17px;
+    border:none;
+    border-bottom: 1px solid $mediun-gray;
+    border-radius: 0;
+    background-color: transparent;
+    @include placeholder{
+        color: rgba(182, 182, 182, 0.4);
+    }
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    @include desktop-1399{
+        font-size: 23px;
+    }
+    @include media-breakpoint-down(lg){
+        font-size: 22px;
+    }
+    @include media-breakpoint-down(md){
+        font-size: 20px;
+    }
+}
+textarea{
+    &.form-control{
+        min-height: 145px;
+        border-bottom: 1px solid $mediun-gray;
+    }
+}
+
+//font classes
+.font-reg {
+    font-family: $regular-font !important;
+}
+.font-med {
+    font-family: $medium-font;
+}
+.font-extrabold {
+    font-family: $bold-font;
+}

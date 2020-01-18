@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VectorNav</title>
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/custom.min.css">
+
+        <script src="https://use.fontawesome.com/e3fb025e88.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <a class="navbar-brand" href="index.html">
+                        <div class="logo">
+                            <img src="images/black_logo.png" alt="logo" class="img-fluid">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <div class="menus">
+                            <ul class="navbar-nav short_header">
+                                <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Support Library</a></li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu custom_megamenu" aria-labelledby="navbarDropdown">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="inner_view">
+                                                    <ul class="menu_items list-inline">
+                                                        <p>IMU/AHRS</p>
+                                                        <li class="list-inline-item"><a class="dropdown-item" href="#">VN-100</a></li>
+                                                        <li class="list-inline-item"><a class="dropdown-item" href="#">HN110</a></li>
+                                                    </ul>
+                                                    <ul class="menu_items list-inline">
+                                                        <p>IMU/AHRS</p>
+                                                        <li class="list-inline-item"><a class="dropdown-item" href="#">VN-200</a></li>
+                                                        <li class="list-inline-item"><a class="dropdown-item" href="#">VN-210</a></li>
+                                                    </ul>
+                                                    <ul class="menu_items list-inline">
+                                                        <p>IMU/AHRS</p>
+                                                        <li class="list-inline-item"><a class="dropdown-item" href="#">VN-300</a></li>
+                                                        <li class="list-inline-item"><a class="dropdown-item" href="#">VN-310</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="product_info">
+                                                    <img src="images/menu_product01.png" class="img-fluid" alt="product">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><label>Accel: <span class="value">16g</span></label></li>
+                                                        <li class="list-inline-item"><label>Pitch/Roll: <span class="value">0.03°</span></label></li>
+                                                    </ul>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><label>Gyro: <span class="value">490°/s</span></label></li>
+                                                        <li class="list-inline-item"><label>Heading: <span class="value">490°/s</span></label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="applications.html">
+                                        Applications
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Resources
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">LOG IN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="wraper resource_list_page">
+
+            <section class="resource_list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="heading_h1">
+                                <h1 class="text-uppercase">Resource Listing</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="content_view">
+                                <h6 class="small_heading">CASE STUDY</h6>
+                                <h2 class="text-uppercase">Red Bull Air Race Search for Perfection</h2>
+                                <p>Created in 2003, the Red Bull Air Race World Championship features the world’s best race pilots in a pure motorsport competition that combines speed, precision and skill.</p>
+                                <a href="#" class="right_arrow">Read More <img src="images/red_right_icon.svg" alt="icon" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter_sec">
+                        <h3>Filter By:</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected>Resource Type</option>
+                                            <option>Resource Type 1</option>
+                                            <option>Resource Type 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected>Category</option>
+                                            <option>Category 1</option>
+                                            <option>Category 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn_border2">Reset Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="showing_result">
+                        <p>Showing 1-12 of 60</p>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="listing_box">
+                                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p>
+
+                                <div class="date_time">
+                                    <p class="date">December 13th, 2018</p>
+                                    <p class="type">Resource Type</p>
+                                    <p class="cate">Category, Category, Category</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav aria-label="navigation">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item prevnext disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">of</a></li>
+                          <li class="page-item"><a class="page-link" href="#">20</a></li>
+                          <li class="page-item prevnext"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="footer">
+            <div class="mobile_view d-lg-none d-md-block">
+                <div class="container">
+                    <div class="top">
+                        <div class="footer_item">
+                            <a href="index.html" class="logo">
+                                <img src="images/logo.png" alt="logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="footer_item">
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Products</a></li>
+                                <li><a href="applications.html">Applications</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="short_footer">
+                            <div class="copyright">
+                                <p class="mb-0">© Copyright 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="footer_item">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#">Support library</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="short_footer">
+                            <ul class="list-inline social_links">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_view d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer_item">
+                                <a href="#" class="logo">
+                                    <img src="images/logo.png" alt="logo" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="footer_item">
+                                        <p>Products</p>
+                                        <ul class="list-unstyled product_list mb-0">
+                                            <li>IMU/AHRS</li>
+                                            <li><a href="#">VN-100</a></li>
+                                            <li><a href="#">HN110</a></li>
+                                            <li>GNSS / INS</li>
+                                            <li><a href="#">VN-200</a></li>
+                                            <li><a href="#">VN-210</a></li>
+                                            <li>Dual GNSS / INS</li>
+                                            <li><a href="#">VN-300</a></li>
+                                            <li><a href="#">VN-310</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="footer_item">
+                                        <p>Applications</p>
+                                        <ul class="list-unstyled apps mb-0">
+                                            <li><a href="#">Autonomous Vehicles</a></li>
+                                            <li><a href="#">EO/IR Surveillance</a></li>
+                                            <li><a href="#">LIDAR Mapping</a></li>
+                                            <li><a href="#">Photogrammetry</a></li>
+                                            <li><a href="#">ROV</a></li>
+                                            <li><a href="#">SATCOM on the Move</a></li>
+                                            <li><a href="#">SIGINT</a></li>
+                                            <li><a href="#">USV</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="footer_item">
+                                        <p>Resources</p>
+                                        <ul class="list-unstyled resource mb-0">
+                                            <li><a href="#">Educational Material</a></li>
+                                            <li><a href="#">Software</a></li>
+                                            <li><a href="#">Documentation</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="footer_item">
+                                        <p>About Us</p>
+                                        <ul class="list-unstyled about mb-0">
+                                            <li><a href="#">Company and History</a></li>
+                                            <li><a href="#">News and Events</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer_item">
+                                <ul class="list-unstyled support_list mb-0">
+                                    <li><a href="#">Support library</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Store</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="short_footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="copyright">
+                                    <p class="mb-0">© Copyright 2019</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <ul class="list-inline social_links">
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+
+        <script>
+            $(function () {
+                $('select').selectpicker();
+            });
+        </script>
+    </body>
+</html>

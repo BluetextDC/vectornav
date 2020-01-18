@@ -1,0 +1,56 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.FullwidthStatistics.FullwidthStatisticsViewModel
+<div class="about_page">
+    <section class="validation_sec">
+        <div class="container">
+            <div class="heading_h2 text-center">
+                <h2 class="text-uppercase mb-0 text-white">@Model.Title_JpVM</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-2">
+                    <div class="item_box text-center text-white">
+                        <h3>@Model.Value</h3>
+                        <p>@Model.Description</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-2">
+                    <div class="item_box text-center text-white">
+                        <h3>1m</h3>
+                        <p>Lorem Ipsum Dolor Set Artest Em</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2">
+                    <div class="item_box text-center text-white">
+                        <h3>200K</h3>
+                        <p>Lorem Ipsum Dolor Set Artest Em</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2">
+                    <div class="item_box text-center text-white">
+                        <h3>95%</h3>
+                        <p>Lorem Ipsum Dolor Set Artest Em</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2">
+                    <div class="item_box text-center text-white">
+                        <h3>89%</h3>
+                        <p>Lorem Ipsum Dolor Set Artest Em</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2">
+                    <div class="item_box text-center text-white">
+                        <h3>2m</h3>
+                        <p>Lorem Ipsum Dolor Set Artest Em</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+

@@ -1,0 +1,18 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.BT_ModuleTest_CtEmployee.BT_ModuleTest_CtEmployeeViewModel
+    <div>
+        <h1>List of Data</h1>
+    </div>
+    <div>
+        @foreach (var item in Model.List_CtEmployee)
+        {
+            <h3>Address: </h3>
+            
+            <h3> Name</h3>
+        }
+    </div>
+
+

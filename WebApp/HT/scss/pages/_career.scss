@@ -1,0 +1,319 @@
+.career_page{
+    .short_banner_sec{
+        background: url('#{$imageurl}/career_bg.jpg') no-repeat center;
+        &:before{
+            background-color: $dark-gray;
+            mix-blend-mode: multiply;
+        }
+    }
+    
+    .position_sec{
+        padding: 20px 0px 110px;
+        .heading_h2{
+            margin-bottom: 55px;
+        }
+        .box{
+            h4{
+                font-size: 30px;
+                font-family: $bold-font;
+                margin-bottom: 10px;
+            }
+        }
+
+        @include media-breakpoint-down(lg){
+            padding: 20px 0px 60px;
+            .box{
+                h4{
+                    font-size: 26px;
+                }
+            }
+        }
+        @include media-breakpoint-down(md){
+            padding: 20px 0px 50px;
+            .heading_h2{
+                margin-bottom: 35px;
+            }
+            .box{
+                h4{
+                    font-size: 24px;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm){
+            padding: 10px 0px 20px;
+            .heading_h2{
+                margin-bottom: 25px;
+            }
+            .box{
+                margin-bottom: 40px;
+                h4{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .engineer_sec{
+        .carousel-indicators{
+            justify-content: flex-end;
+            margin-right: 42%;
+            bottom: 220px;
+        }
+        .carousel-control-prev {
+            left: 140px;
+        }
+        .carousel-control-next {
+            right: 95px;
+        }
+        .carousel-inner{
+            .carousel-item{
+                .box_img{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .box_content{
+                    width: 100%;
+                    height: 100%;
+                    padding: 134px 48px;
+                    background-color: $dark-charcoal;
+                    position: relative;
+                    z-index: 0;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        right: 0;
+                        bottom: 0;
+                        mix-blend-mode: overlay;
+                        background: url('#{$imageurl}/engineer_sec.png') no-repeat right bottom;
+                    }
+                    .content{
+                        max-width: 715px;
+                        h2,h3{
+                            font-family: $bold-font;
+                        }
+                        h2{
+                            font-size: 40px;
+                            line-height: 52px;
+                            margin-bottom: 30px;
+                        }
+                        h3{
+                            font-size: 34px;
+                            line-height:40px;
+                            margin-bottom: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include desktop-1680{
+            .carousel-indicators{
+                bottom: 190px;
+                margin-right: 41%;            
+            }
+            .carousel-inner{
+                .carousel-item{
+                    .box_content{
+                        padding: 164px 48px;
+                        &:after{
+                            background-size: 320px;
+                        }
+                        .content{
+                            max-width: 600px;
+                            h2{
+                                font-size: 30px;
+                                line-height: 40px;
+                                margin-bottom: 30px;
+                            }
+                            h3{
+                                font-size: 28px;
+                                line-height: 36px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include desktop-1600{
+            .carousel-indicators{
+                bottom: 130px;
+                margin-right: 40%;
+            }
+        }
+        @include desktop-1440{
+            .carousel-indicators{
+                bottom: 85px;
+                margin-right: 38%;
+            }
+            .carousel-inner{
+                .carousel-item{
+                    .box_content{
+                        padding: 110px 48px;
+                        &:after{
+                            background-size: 220px;
+                        }
+                        .content{
+                            max-width: 480px;
+                            h2{
+                                font-size: 26px;
+                                line-height: 35px;
+                                margin-bottom: 20px;
+                            }
+                            h3{
+                                font-size: 24px;
+                                line-height: 30px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-down(lg){
+            .carousel-control-prev,.carousel-control-next{
+                display: none;
+            }
+            .carousel-indicators{
+                bottom: 85px;
+                margin-right: 37%;
+            }
+            .carousel-inner{
+                .carousel-item{
+                    .box_content{
+                        padding: 70px 30px;
+                        &:after{
+                            background-size: 180px;
+                        }
+                        .content{
+                            max-width: 100%;
+                            h2{
+                                font-size: 22px;
+                                line-height: 32px;
+                                margin-bottom: 20px;
+                            }
+                            h3{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-down(md){
+            .carousel-indicators{
+                bottom:45px;
+                margin-right: 36%;
+            }
+            .carousel-inner{
+                .carousel-item{
+                    .box_content{
+                        padding: 45px 15px;
+                        &:after{
+                            background-size: 155px;
+                        }
+                        .content{
+                            h2{
+                                font-size: 18px;
+                                line-height: 25px;
+                                margin-bottom: 20px;
+                            }
+                            h3{
+                                font-size: 18px;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-down(sm){
+            .carousel-indicators{
+                bottom:45px;
+                justify-content: flex-start;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .benefits_sec{
+        padding: 130px 0;
+        .heading_h2{
+            margin-bottom: 35px;
+        }
+        @media (min-width:1681px){
+            .container{
+                max-width: 1365px;
+            }
+        }
+        .box{
+            margin-bottom: 40px;
+            img{
+                margin-bottom: 40px;
+            }
+            h4{
+                font-family: $bold-font;
+                font-size: 30px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        @include desktop-1440{
+            padding: 60px 0 40px;
+            .box{
+                margin-bottom:50px;
+                img{
+                    margin-bottom: 30px;
+                    max-width: 90px;
+                }
+                h4{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm){
+            padding: 60px 0;
+            .heading_h2{
+                margin-bottom: 50px;
+                h2{
+                    font-size: 24px;
+                }
+            }
+            .box{
+                margin-bottom:30px;
+                img{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .app_view_sec{
+        padding-top: 0;
+        .heading_h2{
+            margin-bottom: 65px;
+        }
+        @include media-breakpoint-down(md){
+            .heading_h2{
+                margin-bottom: 50px;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            .heading_h2{
+                margin-bottom: 40px;
+                h2{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+}

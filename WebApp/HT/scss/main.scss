@@ -1,0 +1,18 @@
+@import 'mixin/mixin';
+@import 'mixin/breakpoints';
+@import 'variables/variables';
+@import 'helper/helper';
+
+//Common
+@import 'common/header';
+@import 'common/footer';
+@import 'common/common';
+
+//Home Page
+@import 'pages/home';
+@import 'pages/application';
+@import 'pages/product';
+@import 'pages/career';
+@import 'pages/about';
+@import 'pages/resourcedetail';
+@import 'pages/resourcelist';

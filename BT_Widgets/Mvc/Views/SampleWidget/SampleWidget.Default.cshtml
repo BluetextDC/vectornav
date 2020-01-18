@@ -1,0 +1,31 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.SampleWidget.SampleWidgetViewModel
+
+<section class="width_promo_sec">
+    <div class="container">
+        <div class="heading_h2 text-center max100">
+            <h2 class="text-uppercase text-white">@Model.Title_JpVM</h2>
+            <p class="text-white">Subtitle </p>
+        </div>
+        <div>
+            Selected List  Value : @Model.ListItem_ValueVM
+        </div>
+        <div class="text-center">
+            @Html.Raw(Model.Link)
+        </div>
+        <div>
+            @if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
+            {
+                <img src="@Model.SelectedSizeUrl" title="@Model.ImageTitle" alt="@Model.ImageAlternativeText" />
+            }
+        </div>
+
+    </div>
+</section>
+
+
+
+

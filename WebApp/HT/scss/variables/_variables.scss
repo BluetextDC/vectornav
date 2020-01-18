@@ -1,0 +1,35 @@
+// colors
+$black          : #000;
+$white          : #fff;
+$medium-red     : #BE1E2D;
+$dark-charcoal  : #231F20;
+$red            : #EC1C24;
+$dark-red       : #910d23;
+$dark-gray      : #646a71;
+$mediun-gray    : #b6b6b6;
+$light-gray     : #eaeaea;
+$silver_clr     : #BEBEBE;
+
+// link
+$imageurl       :  "../images";
+$fonturl        :  "../fonts";
+
+
+// font
+$regular-font   :  'Roboto-Regular';
+$bold-font      :  'ITCAvantGardePro-Bold';
+$medium-font    :  'AvantGardeLT-Medium';
+
+
+//Grid
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px
+) !default;
+
+@include font-face($regular-font, '#{$fonturl}/Roboto-Regular', 'normal', 'normal');
+@include font-face($medium-font, '#{$fonturl}/AvantGardeLT-Medium', 'normal', 'normal');
+@include font-face($bold-font, '#{$fonturl}/ITCAvantGardePro-Bold', 'normal', 'normal');

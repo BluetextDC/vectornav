@@ -1,0 +1,86 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.ContactUs.ContactUsViewModel
+
+<section class="contact_sec">
+    <div class="container">
+        <div class="heading_h2 text-center">
+            <h2 class="text-uppercase">Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor  </p>
+        </div>
+
+        <div class="inner_view">
+            <form>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="firstname" class="form-control" placeholder="First Name" value="@Model.FirstName">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="lastname" class="form-control" placeholder="Last Name" value="@Model.LastName">
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="company" class="form-control" placeholder="Company" value="@Model.Company">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" name="Email" class="form-control" placeholder="Email" value="@Model.Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="form-group checkbox_view">
+                            <label class="d-block">I am looking for:</label>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="salesSupport" checked="@Model.SalesSupport">
+                                <label class="custom-control-label" for="salesSupport">Sales Support</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customerSupport" checked="@Model.CustomerSupport">
+                                <label class="custom-control-label" for="customerSupport">Customer Support</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Message">@Model.Message</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox short_checkbox">
+                                <input type="checkbox" class="custom-control-input" id="agree" checked="@Model.Agreetorecievenews">
+                                <label class="custom-control-label" for="agree">By selecting this option, I agree to receive news and information about VectorNav and its partners. I understand that I can unsubscribe at any time.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.Raw(Model.Link)
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+

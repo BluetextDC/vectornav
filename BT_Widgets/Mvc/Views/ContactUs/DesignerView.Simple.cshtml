@@ -1,0 +1,55 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<div class="form-group">
+    <expander expander-title="Link">
+        <sf-link-selector sf-link-html="currentLink" sf-selected-item="proxy.selectedItem" sf-editor-content="editorContent">
+        </sf-link-selector>
+    </expander>
+</div>
+
+<div class="form-group">
+    <label for="lblfname" class="form-label">First Name</label>
+    <input id="txtfname" type="text" class="form-control" ng-model="properties.FirstName.PropertyValue" />
+</div>
+<div class="form-group">
+    <label for="lbllname" class="form-label">Last Name</label>
+    <input id="txtlname" type="text" class="form-control" ng-model="properties.LastName.PropertyValue" />
+</div>
+<div class="form-group">
+    <label for="lblcompany" class="form-label">Company</label>
+    <input id="txtcompany" type="text" class="form-control" ng-model="properties.Company.PropertyValue" />
+</div>
+<div class="form-group">
+    <label for="lblemail" class="form-label">Email</label>
+    <input id="txtemail" type="text" class="form-control" ng-model="properties.Email.PropertyValue" />
+</div>
+<div class="form-group">
+    <label for="lblmessage" class="form-label">Message</label>
+    <input id="txtmsg" type="text" class="form-control" ng-model="properties.Message.PropertyValue" />
+</div>
+<div class="form-group">
+    <input type="checkbox" id="salesSupport" ng-model="properties.SalesSupport.PropertyValue">
+    <label class="form-label" for="salesSupport">Sales Support</label>
+</div>
+<div class="form-group">
+    <input type="checkbox" id="customerSupport" ng-model="properties.CustomerSupport.PropertyValue">
+    <label class="form-label" for="customerSupport">Customer Support</label>
+</div>
+<div class="form-group">
+    <input type="checkbox" id="agree" ng-model="properties.Agreetorecievenews.PropertyValue">
+    <label class="form-label" for="agree">By selecting this option, I agree to receive news and information about VectorNav and its partners. I understand that I can unsubscribe at any time.</label>
+</div>
+
+@*<div class="form-group">
+    <expander expander-title="Select Image">
+        <sf-image-field class="sf-Media--info modal-settings modal-settings-space"
+                        sf-model="properties.ImageId.PropertyValue"
+                        sf-image="selectedImage"
+                        sf-provider="properties.ImageProviderName.PropertyValue"
+                        sf-media-settings="@SettingsHelpers.GetMediaSettings("Image")"
+                        id="image-field"></sf-image-field>
+    </expander>
+</div>*@
+
+

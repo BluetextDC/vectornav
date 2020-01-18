@@ -1,0 +1,72 @@
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model SitefinityWebApp.Mvc.Models.FullwidthFiftyFiftyCarouselModel
+@{
+    int cnt = 1;
+    string className = "carousel-item active";
+    int count = 0;
+    string ActiveSlide = "active";
+}
+    <main class="wraper career_page">
+        <section class="engineer_sec">
+            <div id="employeeCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-0">
+                    @foreach (var item in Model.GetList())
+                    {
+                        if (count != 0)
+                        {
+                            ActiveSlide = "";
+                        }
+                        <li data-target="#employeeCarousel" data-slide-to="@count" class="@ActiveSlide"></li>
+                        count++;
+
+                    }
+                  
+                </ol>
+                <div class="carousel-inner">
+
+                    @foreach (var item in Model.GetList())
+                    {
+                        if (cnt == 1)
+                        {
+                            className = "carousel-item active";
+                            cnt++;
+                        }
+                        else
+                        {
+                            className = "carousel-item";
+                        }
+                        <div class="@className">
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+                                    <div class="box_img">
+                                        <img src="@item.SelectedImageSrc" alt="image" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box_content">
+                                        <div class="content text-white">
+                                            <h2>@Html.Raw(item.Description)</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+                <a class="carousel-control-prev" href="#employeeCarousel" role="button" data-slide="prev">
+                    <img src="~/ResourcePackages/BT/images/left_arrow.svg" alt="icon" class="img-fluid">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#employeeCarousel" role="button" data-slide="next">
+                    <img src="~/ResourcePackages/BT/images/right_arrow.svg" alt="icon" class="img-fluid">
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    @*@Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/jquery.min.js"),"head")*@
+    @Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/bootstrap.bundle.min.js"),"bottom")

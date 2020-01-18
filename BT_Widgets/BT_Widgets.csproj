@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DC993D5-2B17-4808-87B0-4D6E29122BA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BT_Widgets</RootNamespace>
+    <AssemblyName>BT_Widgets</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.WebApi">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Autofac.Integration.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentityModel">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentityServer3">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\IdentityServer3.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentityServer3.AccessTokenValidation">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\IdentityServer3.AccessTokenValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocol.Extensions">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.FileSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Jwt">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OpenIdConnect">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.WsFederation">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.Security.WsFederation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.StaticFiles">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Owin.StaticFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorGenerator.Mvc">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\RazorGenerator.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.DEC.Common.Encryption.Contract">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.DEC.Common.Encryption.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.DigitalExperienceCloud.Client">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.DigitalExperienceCloud.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Octopus.Validation">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Octopus.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.35.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.40.Extensions">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.40.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.DataAdapter">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.DataAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.DataAdapter.OpenAccess">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.DataAdapter.OpenAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.DataAdapter.SalesForce">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.DataAdapter.SalesForce.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.DataAdapter.SharePoint">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.DataAdapter.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.DataSource.SharePoint">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.DataSource.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.DataSource.SyncDB">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.DataSource.SyncDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Sync">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Web">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.OpenAccess.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.OpenXmlRendering">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Reporting.OpenXmlRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.XpsRendering">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Reporting.XpsRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.ABTesting">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.ABTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.AdminBridge">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.AdminBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Amazon">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Amazon.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.AmazonCloudSearch">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.AmazonCloudSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Analytics.Server.Infrastructure">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Analytics.Server.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Audit.Elasticsearch">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Audit.Elasticsearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.AuditTrail">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.AuditTrail.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Authentication">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Azure">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Connectivity">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.ContentModules">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.ContentModules.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Dashboard">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Dashboard.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.DataIntelligenceConnector">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.DataIntelligenceConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Diagnostics">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Ecommerce">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Ecommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.EloquaConnector">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.EloquaConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Forums">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Forums.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Blogs">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Blogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Card">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Card.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Comments">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Comments.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.ContentBlock">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.ContentBlock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Data">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.DynamicContent">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.DynamicContent.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.EmailCampaigns">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.EmailCampaigns.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Events">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Forms">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Identity">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.InlineClientAssets">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.InlineClientAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Lists">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Lists.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Media">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Navigation">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.News">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.News.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Publishing">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Search">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Frontend.Taxonomies">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Frontend.Taxonomies.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.HubSpotConnector">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.HubSpotConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.MarketoConnector">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.MarketoConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.MobileFormats">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.MobileFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Model">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Mvc">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Packaging">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Personalization">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Personalization.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Personalization.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Personalization.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.PrecompiledPages.Backend.0">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.PrecompiledPages.Backend.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.PrecompiledTemplates">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.PrecompiledTemplates.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.RecurrentRules">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.RecurrentRules.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.RecycleBin">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.RecycleBin.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Resources">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.SalesForceConnector">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.SalesForceConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Search">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Search.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Search.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Comments">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Comments.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Comments.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Comments.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Documents">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Documents.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Documents.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Events">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Notifications">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Notifications.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Notifications.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.RecycleBin">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.RecycleBin.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.RecycleBin.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.RecycleBin.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Statistics">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Statistics.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Services.Statistics.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.SharepointConnector">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.SharepointConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.SitemapGenerator">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.SitemapGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.SiteSync">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.SiteSync.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.SiteSync.Impl">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.SiteSync.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Translations">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Translations.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Utilities">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Web.Api">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.Web.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.WebSecurity">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Sitefinity.WebSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Data">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.Fixed.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.FormatProviders.Html">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.FormatProviders.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.FormatProviders.OpenXml">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.FormatProviders.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.FormatProviders.Rtf">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Documents.FormatProviders.Rtf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\..\..\..\BorisCode\ExtDll\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Mvc\Controllers\BT_ModuleTest_CtEmployeeController.cs" />
+    <Compile Include="Mvc\Controllers\ContactUsController.cs" />
+    <Compile Include="Mvc\Controllers\CTAController.cs" />
+    <Compile Include="Mvc\Controllers\CustomImageController.cs" />
+    <Compile Include="Mvc\Controllers\FullWidthPromoController.cs" />
+    <Compile Include="Mvc\Controllers\FullwidthStatisticsController.cs" />
+    <Compile Include="Mvc\Controllers\GenericHeroController.cs" />
+    <Compile Include="Mvc\Controllers\HomePageHeroController.cs" />
+    <Compile Include="Mvc\Controllers\PageSelectorInDesignerController.cs" />
+    <Compile Include="Mvc\Controllers\SampleWidgetController.cs" />
+    <Compile Include="Mvc\Models\BT_ModuleTest_CtEmployee\BT_ModuleTest_CtEmployeeModel.cs" />
+    <Compile Include="Mvc\Models\BT_ModuleTest_CtEmployee\BT_ModuleTest_CtEmployeeViewModel.cs" />
+    <Compile Include="Mvc\Models\ContactUs\ContactUsModel.cs" />
+    <Compile Include="Mvc\Models\ContactUs\ContactUsViewModel.cs" />
+    <Compile Include="Mvc\Models\CTA\CTAModel.cs" />
+    <Compile Include="Mvc\Models\CTA\CTAViewModel.cs" />
+    <Compile Include="Mvc\Models\CustomImageModel.cs" />
+    <Compile Include="Mvc\Models\CustomImageViewModel.cs" />
+    <Compile Include="Mvc\Models\FullWidthPromo\FullWidthPromoModel.cs" />
+    <Compile Include="Mvc\Models\FullWidthPromo\FullWidthPromoViewModel.cs" />
+    <Compile Include="Mvc\Models\FullwidthStatistics\FullwidthStatisticsModel.cs" />
+    <Compile Include="Mvc\Models\FullwidthStatistics\FullwidthStatisticsViewModel.cs" />
+    <Compile Include="Mvc\Models\GenericHero\GenericHeroModel.cs" />
+    <Compile Include="Mvc\Models\GenericHero\GenericHeroViewModel.cs" />
+    <Compile Include="Mvc\Models\HomePageHero\HomePageHeroModel.cs" />
+    <Compile Include="Mvc\Models\HomePageHero\HomePageHeroViewModel.cs" />
+    <Compile Include="Mvc\Models\PageSelectorInDesignerModel.cs" />
+    <Compile Include="Mvc\Models\SampleWidget\SampleWidgetModel.cs" />
+    <Compile Include="Mvc\Models\SampleWidget\SampleWidgetViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Mvc\Views\CustomImage\Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\CustomImage\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\CustomImage\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\PageSelectorInDesigner\Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\PageSelectorInDesigner\DesignerView.DefaultDesignerView.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\PageSelectorInDesigner\DesignerView.DefaultDesignerView.json" />
+    <EmbeddedResource Include="Mvc\Views\SampleWidget\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\SampleWidget\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\SampleWidget\SampleWidget.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\BT_ModuleTest_CtEmployee\BT_ModuleTest_CtEmployee.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\BT_ModuleTest_CtEmployee\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\BT_ModuleTest_CtEmployee\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\CTA\CTA.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\CTA\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\CTA\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\FullWidthPromo\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\FullWidthPromo\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\FullWidthPromo\FullWidthPromo.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\ContactUs\ContactUs.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\ContactUs\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\ContactUs\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\FullwidthStatistics\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\FullwidthStatistics\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\FullwidthStatistics\FullwidthStatistics.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\GenericHero\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\GenericHero\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\GenericHero\GenericHero.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\HomePageHero\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\HomePageHero\DesignerView.Simple.json" />
+    <EmbeddedResource Include="Mvc\Views\HomePageHero\HomePageHero.Default.cshtml" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mvc\Scripts\CustomImage\designerview-simple.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mvc\Controllers\readme.txt" />
+    <Content Include="Mvc\Models\readme.txt" />
+    <Content Include="Mvc\Scripts\Author\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\PageSelectorInDesigner\designerview-defaultDesignerView.js" />
+    <EmbeddedResource Include="Mvc\Scripts\SampleWidget\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\BT_ModuleTest_CtEmployee\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\CTA\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\FullWidthPromo\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\ContactUs\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\FullwidthStatistics\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\GenericHero\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\HomePageHero\designerview-simple.js" />
+    <Content Include="Mvc\Scripts\News\designerview-simple.js" />
+    <Content Include="Mvc\Views\readme.txt" />
+    <Content Include="Mvc\Views\Shared\readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="CustomImageWidget" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

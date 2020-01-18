@@ -1,0 +1,89 @@
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: Adding a foreign key constraint(s) to a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: Adding a new table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.MDL_BT.Full_width_50_Carousel
+CREATE TABLE [mdl_bt_full_width_50_carousel] (
+    [base_id] uniqueidentifier NOT NULL,
+    [Description] NVARCHAR(255) NULL,       -- Full_width_50_Carousel.Description
+    CONSTRAINT [pk_mdl_bt_fll_wdth_50_F04CBA69] PRIMARY KEY ([base_id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.MDL_BT.TestimonialCarousel
+CREATE TABLE [mdl_bt_testimonialcarousel] (
+    [base_id] uniqueidentifier NOT NULL,
+    [Title] NVARCHAR(255) NULL,             -- TestimonialCarousel.Title
+    [Description] NVARCHAR(MAX) NULL,       -- TestimonialCarousel.Description
+    CONSTRAINT [pk_mdl_bt_testimonialcarousel] PRIMARY KEY ([base_id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: -- add column for field <internal-class-id>
+ALTER TABLE [sf_dynamic_content] ADD [voa_class] int NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: UPDATE [sf_dynamic_content] SET [voa_class] = 0
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: ALTER TABLE [sf_dynamic_content] ALTER COLUMN [voa_class] int NOT NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: ALTER TABLE [mdl_bt_full_width_50_carousel] ADD CONSTRAINT [ref_mdl_bt_fll_wdth_5_B03AC02B] FOREIGN KEY ([base_id]) REFERENCES [sf_dynamic_content]([base_id]) ON DELETE CASCADE
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/17/2020 7:27:54 AM
+
+Message: ALTER TABLE [mdl_bt_testimonialcarousel] ADD CONSTRAINT [ref_mdl_bt_tstmnlcrsl_F06D1341] FOREIGN KEY ([base_id]) REFERENCES [sf_dynamic_content]([base_id]) ON DELETE CASCADE
+
+
+----------------------------------------

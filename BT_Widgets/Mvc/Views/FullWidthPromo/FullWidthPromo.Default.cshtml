@@ -1,0 +1,57 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.FullWidthPromo.FullWidthPromoViewModel
+
+
+@if (Model.ListItem_ValueVM.Trim().ToUpper() == "mixed-red".ToUpper())
+{
+    <section class="width_promo_sec">
+        <div class="container">
+            <div class="heading_h2 text-center max100">
+                <h2 class="text-uppercase text-white">@Model.Title_JpVM</h2>
+                <p class="text-white">@Model.Sub_Title_JpVM</p>
+            </div>
+            <div class="text-center">
+                @Html.Raw(Model.Link)
+            </div>
+
+        </div>
+    </section>
+
+}
+else if (Model.ListItem_ValueVM.Trim().ToUpper() == "black".ToUpper())
+{
+    <section class="width_promo_sec knowledge_sec">
+        <div class="container">
+            <div class="heading_h2 text-center max100">
+                <h2 class="text-uppercase text-white">@Model.Title_JpVM</h2>
+                <p class="text-white">@Model.Sub_Title_JpVM </p>
+            </div>
+            <div class="text-center">
+                @Html.Raw(Model.Link)
+            </div>
+        </div>
+    </section>
+}
+else if (Model.ListItem_ValueVM.Trim().ToUpper() == "red".ToUpper())
+{
+    <section class="join_sec">
+        <div class="container">
+            <div class="heading_h2 text-center">
+                <h2 class="text-uppercase">@Model.Title_JpVM</h2>
+                <p>@Model.Sub_Title_JpVM </p>
+            </div>
+            <div class="text-center">
+                @Html.Raw(Model.Link)
+            </div>
+        </div>
+    </section>
+
+
+}
+
+
+
+

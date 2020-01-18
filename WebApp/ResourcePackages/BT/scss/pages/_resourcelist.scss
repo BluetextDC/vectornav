@@ -1,0 +1,175 @@
+.resource_list_page{
+    .resource_list{
+        padding: 115px 0 80px;
+        .heading_h1{
+            margin-bottom: 0;
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            h1{
+                margin-bottom: 0;
+            }
+        }
+        .content_view{
+            padding: 30px 35px;
+            background-color: $white;
+            box-shadow: 5px 5px 20px rgba($black, 0.16);
+            h2{
+                font-size: 35px;
+                line-height: 50px;
+                font-family: $bold-font;
+            }
+            p{
+                line-height: 22px;
+                margin-bottom: 15px;
+            }
+            .right_arrow{
+                justify-content: flex-start;
+                color: $red;
+            }
+        }
+
+        .filter_sec{
+            margin-top: 15px;
+            .row{
+                align-items: flex-end;
+            }
+            h3{
+                font-size: 30px;
+                line-height: 30px;
+                font-family: $bold-font;
+                margin-bottom: 20px;
+            }
+            .btn_border2{
+                font-size: 13px;
+                min-width: 107px;
+                min-height: 31px;
+                padding: 3px 5px;
+            }
+        }
+
+        .showing_result{
+            display: flex;
+            margin-top: 70px;
+            align-items: center;
+            justify-content: flex-end;
+            color: $dark-gray;
+        }
+
+        .no-gutters{
+            margin:0 -5px;
+            >.col,
+            >[class*=col-]{
+                padding: 0 5px;
+            }
+        }
+
+        .listing_box{
+            border:1px solid $silver_clr;
+            padding: 47px 33px;
+            background-color: $white;
+            @include transition(linear 0.2s);
+            margin-bottom: 10px;
+            min-height: calc(100% - 10px);
+            &:hover{
+                box-shadow: 0px 5px 20px rgba($black, 0.25);
+                border:1px solid transparent;
+                @include scale(1.02, 1.02);
+            }
+            h5{
+                font-size: 24px;
+                color: $dark-charcoal;
+                margin-bottom: 12px;
+                font-family: $bold-font;
+            }
+            >p{
+                line-height: 22px;
+                margin-bottom: 0;
+            }
+            .date_time{
+                font-size: 16px;
+                color: $dark-gray;
+                margin-top: 65px;
+                p{
+                    margin-bottom: 5px;
+                }
+                .cate{
+                    font-family: $bold-font;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @include desktop-1399{
+            padding: 60px 0 50px;
+            .content_view{
+                h2{
+                    font-size: 30px;
+                    line-height: 41px;
+                    margin-bottom: 20px;
+                }
+            }
+            .showing_result{
+                margin-top: 30px;
+            }
+            .listing_box{
+                padding: 30px;
+                min-height: auto;
+                h5{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .date_time{
+                    margin-top: 25px;
+                }
+            }
+        }
+        @include media-breakpoint-down(md){
+            padding: 50px 0 40px;
+            .content_view{
+                padding: 30px 30px;
+                h2{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            .filter_sec{
+                h3{
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm){
+            padding: 40px 0 40px;
+            .heading_h1{
+                min-height: auto;
+                margin-bottom: 35px;
+            }
+            .content_view{
+                margin-bottom: 57px;
+                h2{
+                    margin-bottom: 15px;
+                }
+            }
+            .showing_result{
+                border-bottom: 1px solid $light-gray;
+                padding-bottom: 20px;
+                margin-bottom: 40px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .filter_sec{
+                margin-top: 0;
+                .form-group{
+                    margin-bottom: 30px;
+                }
+            }
+            .listing_box{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
