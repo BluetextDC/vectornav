@@ -48,6 +48,7 @@
     <Reference Include="IdentityServer3.AccessTokenValidation">
       <HintPath>..\..\..\..\BorisCode\ExtDll\IdentityServer3.AccessTokenValidation.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.IdentityModel.Protocol.Extensions">
       <HintPath>..\..\..\..\BorisCode\ExtDll\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
     </Reference>
@@ -121,6 +122,7 @@
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Mvc">
       <HintPath>..\..\..\..\BorisCode\ExtDll\System.Web.Mvc.dll</HintPath>
     </Reference>
@@ -457,6 +459,7 @@
     <Compile Include="Mvc\Controllers\FullwidthStatisticsController.cs" />
     <Compile Include="Mvc\Controllers\GenericHeroController.cs" />
     <Compile Include="Mvc\Controllers\HomePageHeroController.cs" />
+    <Compile Include="Mvc\Controllers\ListController.cs" />
     <Compile Include="Mvc\Controllers\PageSelectorInDesignerController.cs" />
     <Compile Include="Mvc\Controllers\SampleWidgetController.cs" />
     <Compile Include="Mvc\Models\BT_ModuleTest_CtEmployee\BT_ModuleTest_CtEmployeeModel.cs" />
@@ -475,6 +478,7 @@
     <Compile Include="Mvc\Models\GenericHero\GenericHeroViewModel.cs" />
     <Compile Include="Mvc\Models\HomePageHero\HomePageHeroModel.cs" />
     <Compile Include="Mvc\Models\HomePageHero\HomePageHeroViewModel.cs" />
+    <Compile Include="Mvc\Models\List\ListModel.cs" />
     <Compile Include="Mvc\Models\PageSelectorInDesignerModel.cs" />
     <Compile Include="Mvc\Models\SampleWidget\SampleWidgetModel.cs" />
     <Compile Include="Mvc\Models\SampleWidget\SampleWidgetViewModel.cs" />
@@ -512,6 +516,10 @@
     <EmbeddedResource Include="Mvc\Views\HomePageHero\DesignerView.Simple.cshtml" />
     <EmbeddedResource Include="Mvc\Views\HomePageHero\DesignerView.Simple.json" />
     <EmbeddedResource Include="Mvc\Views\HomePageHero\HomePageHero.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\List\DesignerView.ManageItems.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\List\DesignerView.ManageItems.json" />
+    <EmbeddedResource Include="Mvc\Views\List\DesignerView.Settings.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\List\Index.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -530,6 +538,7 @@
     <EmbeddedResource Include="Mvc\Scripts\FullwidthStatistics\designerview-simple.js" />
     <EmbeddedResource Include="Mvc\Scripts\GenericHero\designerview-simple.js" />
     <EmbeddedResource Include="Mvc\Scripts\HomePageHero\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\List\designerview-manageitems.js" />
     <Content Include="Mvc\Scripts\News\designerview-simple.js" />
     <Content Include="Mvc\Views\readme.txt" />
     <Content Include="Mvc\Views\Shared\readme.txt" />

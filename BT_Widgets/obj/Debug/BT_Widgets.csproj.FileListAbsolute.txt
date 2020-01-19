@@ -269,7 +269,7 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\bin\Debug\MonAg
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\bin\Debug\WindowsAzureTelemetryEvents.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\bin\Debug\stdole.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\bin\Debug\WindowsAzureEventSource.dll
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.csprojAssemblyReference.cache
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.csproj.CopyComplete
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.pdb
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.csprojAssemblyReference.cache

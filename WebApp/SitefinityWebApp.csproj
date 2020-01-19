@@ -920,6 +920,7 @@
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="App_Data\Sitefinity\TrackingConsent\consentDialog.html" />
+    <Content Include="App_Data\Sitefinity\WebsiteTemplates\BT\CustomLayouts\Custom1.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="extensions.bundle.js" />
     <Content Include="HT\about-us.html" />
@@ -1323,6 +1324,7 @@
     <Content Include="HT\scss\variables\_variables.scss" />
     <Content Include="HT\scss\pages\_resourcedetail.scss" />
     <Content Include="HT\scss\pages\_resourcelist.scss" />
+    <Content Include="Mvc\Views\FullwidthFiftyFiftyCarousel\Index - Copy.cshtml" />
     <None Include="packages.config" />
     <Content Include="SampleTemplate.cshtml">
       <Generator>RazorGenerator</Generator>

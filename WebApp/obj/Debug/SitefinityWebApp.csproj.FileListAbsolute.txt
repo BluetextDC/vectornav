@@ -2659,6 +2659,7 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AWSSDK.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AWSSDK.DynamoDBv2.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AWSSDK.S3.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AWSSDK.SQS.dll
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\CsvHelper.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\DDay.Collections.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\DDay.iCal.dll
@@ -2887,6 +2888,8 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\WindowsAzureTel
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\EnvDTE.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\WindowsAzureEventSource.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\stdole.dll
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.pdb
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.dll.config
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AngleSharp.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AntiXssLibrary.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Autofac.xml
@@ -3110,6 +3113,3 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\Sitefinit
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csproj.CopyComplete
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.pdb
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.dll
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.pdb
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.dll.config

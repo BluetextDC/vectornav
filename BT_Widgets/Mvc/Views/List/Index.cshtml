@@ -1,0 +1,36 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.List.ListModel
+<div class="sfContentBlock">
+    @{
+        string openingTag;
+        string closingTag;
+
+      
+        if (Model.ListType == "Bullets")
+            {
+                openingTag = "<ul>";
+                closingTag = "</ul>";
+            }
+            else
+            {
+                openingTag = "<ol>";
+                closingTag = "</ol>";
+            }
+
+            <h2>
+                @Model.ListTitle
+            </h2>
+
+            @Html.Raw(openingTag)
+
+            foreach (var listItem in Model.ListItems)
+            {
+                <li>@listItem</li>
+            }
+
+            @Html.Raw(closingTag)
+    }
+</div>

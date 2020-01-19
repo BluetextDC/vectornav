@@ -71,15 +71,15 @@ WriteLiteral("\r\n\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n    <main");
+WriteLiteral("\r\n<main");
 
 WriteLiteral(" class=\"wraper career_page\"");
 
-WriteLiteral(">\r\n        <section");
+WriteLiteral(">\r\n    <section");
 
 WriteLiteral(" class=\"engineer_sec\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" id=\"employeeCarousel\"");
 
@@ -87,7 +87,7 @@ WriteLiteral(" class=\"carousel slide\"");
 
 WriteLiteral(" data-ride=\"carousel\"");
 
-WriteLiteral(">\r\n                <ol");
+WriteLiteral(">\r\n            <ol");
 
 WriteLiteral(" class=\"carousel-indicators mb-0\"");
 
@@ -95,23 +95,23 @@ WriteLiteral(">\r\n");
 
             
             #line 16 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                    
+                
             
             #line default
             #line hidden
             
             #line 16 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                     foreach (var item in Model.GetList())
+                 foreach (var item in Model.GetList())
+                {
+                    if (count != 0)
                     {
-                        if (count != 0)
-                        {
-                            ActiveSlide = "";
-                        }
+                        ActiveSlide = "";
+                    }
 
             
             #line default
             #line hidden
-WriteLiteral("                        <li");
+WriteLiteral("                    <li");
 
 WriteLiteral(" data-target=\"#employeeCarousel\"");
 
@@ -119,35 +119,35 @@ WriteLiteral(" data-slide-to=\"");
 
             
             #line 22 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                                                                      Write(count);
+                                                                  Write(count);
 
             
             #line default
             #line hidden
 WriteLiteral("\"");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 956), Tuple.Create("\"", 976)
+WriteAttribute("class", Tuple.Create(" class=\"", 912), Tuple.Create("\"", 932)
             
             #line 22 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-           , Tuple.Create(Tuple.Create("", 964), Tuple.Create<System.Object, System.Int32>(ActiveSlide
+       , Tuple.Create(Tuple.Create("", 920), Tuple.Create<System.Object, System.Int32>(ActiveSlide
             
             #line default
             #line hidden
-, 964), false)
+, 920), false)
 );
 
 WriteLiteral("></li>\r\n");
 
             
             #line 23 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                        count++;
+                    count++;
 
-                    }
+                }
 
             
             #line default
             #line hidden
-WriteLiteral("                  \r\n                </ol>\r\n                <div");
+WriteLiteral("\r\n            </ol>\r\n            <div");
 
 WriteLiteral(" class=\"carousel-inner\"");
 
@@ -155,101 +155,101 @@ WriteLiteral(">\r\n\r\n");
 
             
             #line 30 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                    
+                
             
             #line default
             #line hidden
             
             #line 30 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                     foreach (var item in Model.GetList())
+                 foreach (var item in Model.GetList())
+                {
+                    if (cnt == 1)
                     {
-                        if (cnt == 1)
-                        {
-                            className = "carousel-item active";
-                            cnt++;
-                        }
-                        else
-                        {
-                            className = "carousel-item";
-                        }
+                        className = "carousel-item active";
+                        cnt++;
+                    }
+                    else
+                    {
+                        className = "carousel-item";
+                    }
 
             
             #line default
             #line hidden
-WriteLiteral("                        <div");
+WriteLiteral("                    <div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 1582), Tuple.Create("\"", 1600)
+WriteAttribute("class", Tuple.Create(" class=\"", 1456), Tuple.Create("\"", 1474)
             
             #line 41 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-, Tuple.Create(Tuple.Create("", 1590), Tuple.Create<System.Object, System.Int32>(className
+, Tuple.Create(Tuple.Create("", 1464), Tuple.Create<System.Object, System.Int32>(className
             
             #line default
             #line hidden
-, 1590), false)
+, 1464), false)
 );
 
-WriteLiteral(">\r\n                            <div");
+WriteLiteral(">\r\n                        <div");
 
 WriteLiteral(" class=\"row no-gutters\"");
 
-WriteLiteral(">\r\n                                <div");
+WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"col-md-6\"");
 
-WriteLiteral(">\r\n                                    <div");
+WriteLiteral(">\r\n                                <div");
 
 WriteLiteral(" class=\"box_img\"");
 
-WriteLiteral(">\r\n                                        <img");
+WriteLiteral(">\r\n                                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 1821), Tuple.Create("\"", 1849)
+WriteAttribute("src", Tuple.Create(" src=\"", 1679), Tuple.Create("\"", 1707)
             
             #line 45 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-, Tuple.Create(Tuple.Create("", 1827), Tuple.Create<System.Object, System.Int32>(item.SelectedImageSrc
+, Tuple.Create(Tuple.Create("", 1685), Tuple.Create<System.Object, System.Int32>(item.SelectedImageSrc
             
             #line default
             #line hidden
-, 1827), false)
+, 1685), false)
 );
 
 WriteLiteral(" alt=\"image\"");
 
 WriteLiteral(" class=\"img-fluid\"");
 
-WriteLiteral(">\r\n                                    </div>\r\n                                </" +
-"div>\r\n                                <div");
+WriteLiteral(">\r\n                                </div>\r\n                            </div>\r\n  " +
+"                          <div");
 
 WriteLiteral(" class=\"col-md-6\"");
 
-WriteLiteral(">\r\n                                    <div");
+WriteLiteral(">\r\n                                <div");
 
 WriteLiteral(" class=\"box_content\"");
 
-WriteLiteral(">\r\n                                        <div");
+WriteLiteral(">\r\n                                    <div");
 
 WriteLiteral(" class=\"content text-white\"");
 
-WriteLiteral(">\r\n                                            <h2>");
+WriteLiteral(">\r\n                                        <h2>");
 
             
             #line 51 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                                           Write(Html.Raw(item.Description));
+                                       Write(Html.Raw(item.Description));
 
             
             #line default
             #line hidden
-WriteLiteral("</h2>\r\n                                        </div>\r\n                          " +
-"          </div>\r\n                                </div>\r\n                      " +
-"      </div>\r\n                        </div>\r\n");
+WriteLiteral("</h2>\r\n                                    </div>\r\n                              " +
+"  </div>\r\n                            </div>\r\n                        </div>\r\n  " +
+"                  </div>\r\n");
 
             
             #line 57 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-                    }
+                }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </div>\r\n                <a");
+WriteLiteral("\r\n            </div>\r\n            <a");
 
 WriteLiteral(" class=\"carousel-control-prev\"");
 
@@ -259,22 +259,22 @@ WriteLiteral(" role=\"button\"");
 
 WriteLiteral(" data-slide=\"prev\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2623), Tuple.Create("\"", 2672)
-, Tuple.Create(Tuple.Create("", 2629), Tuple.Create<System.Object, System.Int32>(Href("~/ResourcePackages/BT/images/left_arrow.svg")
-, 2629), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2421), Tuple.Create("\"", 2470)
+, Tuple.Create(Tuple.Create("", 2427), Tuple.Create<System.Object, System.Int32>(Href("~/ResourcePackages/BT/images/left_arrow.svg")
+, 2427), false)
 );
 
 WriteLiteral(" alt=\"icon\"");
 
 WriteLiteral(" class=\"img-fluid\"");
 
-WriteLiteral(">\r\n                    <span");
+WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"sr-only\"");
 
-WriteLiteral(">Previous</span>\r\n                </a>\r\n                <a");
+WriteLiteral(">Previous</span>\r\n            </a>\r\n            <a");
 
 WriteLiteral(" class=\"carousel-control-next\"");
 
@@ -284,31 +284,28 @@ WriteLiteral(" role=\"button\"");
 
 WriteLiteral(" data-slide=\"next\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2918), Tuple.Create("\"", 2968)
-, Tuple.Create(Tuple.Create("", 2924), Tuple.Create<System.Object, System.Int32>(Href("~/ResourcePackages/BT/images/right_arrow.svg")
-, 2924), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2700), Tuple.Create("\"", 2750)
+, Tuple.Create(Tuple.Create("", 2706), Tuple.Create<System.Object, System.Int32>(Href("~/ResourcePackages/BT/images/right_arrow.svg")
+, 2706), false)
 );
 
 WriteLiteral(" alt=\"icon\"");
 
 WriteLiteral(" class=\"img-fluid\"");
 
-WriteLiteral(">\r\n                    <span");
+WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"sr-only\"");
 
-WriteLiteral(">Next</span>\r\n                </a>\r\n            </div>\r\n        </section>\r\n    <" +
-"/main>\r\n    ");
+WriteLiteral(">Next</span>\r\n            </a>\r\n        </div>\r\n    </section>\r\n</main>\r\n");
 
 WriteLiteral("\r\n");
 
-WriteLiteral("    ");
-
             
             #line 72 "..\..\MVC\Views\FullwidthFiftyFiftyCarousel\Index.cshtml"
-Write(Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/bootstrap.bundle.min.js"),"bottom"));
+Write(Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/bootstrap.bundle.min.js"), "bottom"));
 
             
             #line default
