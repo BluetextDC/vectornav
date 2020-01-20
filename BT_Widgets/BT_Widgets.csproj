@@ -478,7 +478,7 @@
     <Compile Include="Mvc\Models\GenericHero\GenericHeroViewModel.cs" />
     <Compile Include="Mvc\Models\HomePageHero\HomePageHeroModel.cs" />
     <Compile Include="Mvc\Models\HomePageHero\HomePageHeroViewModel.cs" />
-    <Compile Include="Mvc\Models\List\ListModel.cs" />
+    <Compile Include="Mvc\Models\List\ListMode.cs" />
     <Compile Include="Mvc\Models\PageSelectorInDesignerModel.cs" />
     <Compile Include="Mvc\Models\SampleWidget\SampleWidgetModel.cs" />
     <Compile Include="Mvc\Models\SampleWidget\SampleWidgetViewModel.cs" />
@@ -551,8 +551,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>copy $(TargetPath) "D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\ExtDll\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

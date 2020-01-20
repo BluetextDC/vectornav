@@ -7,7 +7,7 @@ using Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Controllers.Attributes;
 namespace BT_Widgets.Mvc.Controllers
 {
     //[EnhanceViewEngines]
-    [ControllerToolboxItem(Name = "SampleWidget", Title = "SampleWidget", SectionName = "Test_BT")]
+    [ControllerToolboxItem(Name = "SampleWidget", Title = "Sample-Widget", SectionName = "Test_BT")]
     public class SampleWidgetController : Controller
     {
         [TypeConverter(typeof(ExpandableObjectConverter))]

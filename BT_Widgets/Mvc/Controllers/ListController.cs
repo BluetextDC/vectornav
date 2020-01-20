@@ -1,18 +1,14 @@
-﻿//using OpenTK.Graphics.ES11;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using Telerik.Sitefinity.Mvc;
-using Microsoft.CSharp;
-using BT_Widgets.Mvc.Models.List;
 
 namespace BT_Widgets.Mvc.Controllers
-
 {
     /// <summary>
     /// This class represents controller of the SampleList widget
     /// </summary>
-    [ControllerToolboxItem(Name = "SampleList", SectionName = "Test_BT", Title = "ListItem")]
+    [ControllerToolboxItem(Name = "SampleList", SectionName = "Test_BT", Title = "Sample List")]
     public class ListController : Controller
     {
         #region Public properties
@@ -42,7 +38,7 @@ namespace BT_Widgets.Mvc.Controllers
         /// <value>
         /// The type of the list.
         /// </value>
-        public string ListType
+        public ListMode ListType
         {
             get;
             set;
@@ -77,12 +73,11 @@ namespace BT_Widgets.Mvc.Controllers
         /// <returns>The default widget view</returns>
         public ActionResult Index()
         {
-            ListModel m_object = new ListModel();
-            m_object.ListTitle = "title " + System.DateTime.Now.Second.ToString();
-            m_object.ListType = "type  " + System.DateTime.Now.Second.ToString();
-            m_object.ListItems = this.DeserializeItems();
+            this.ViewBag.ListTitle = this.ListTitle;
+            this.ViewBag.ListType = this.ListType;
+            this.ViewBag.ListItems = this.DeserializeItems();
 
-            return this.View(m_object);
+            return this.View();
         }
 
         #endregion

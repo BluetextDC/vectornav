@@ -1,0 +1,229 @@
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 20-01-2020 5:02:26 AM
+
+Message: HandlingInstanceID: 84477a59-a13a-42e9-8bbb-5986e18f5428
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/20/2020 10:32:26
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 20-01-2020 5:02:26 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-132239701333576469
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239701333576469
+
+ProcessId: 2124
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-7
+
+Win32 ThreadId:2536
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 20-01-2020 5:02:26 AM
+
+Message: HandlingInstanceID: 27a412e6-8c8b-4a94-b90b-a09ba812f974
+An exception of type 'Lucene.Net.Store.LockObtainFailedException' occurred and was caught.
+------------------------------------------------------------------------------------------
+01/20/2020 10:32:26
+Type : Lucene.Net.Store.LockObtainFailedException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : Lock obtain timed out: NativeFSLock@D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\App_Data\Sitefinity\Search\advanced-settings-search\write.lock
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean Obtain(Int64)
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Store.Lock.Obtain(Int64 lockWaitTimeout) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\Lock.cs:line 97
+   at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 882
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 20-01-2020 5:02:26 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-132239701333576469
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239701333576469
+
+ProcessId: 2124
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-4
+
+Win32 ThreadId:18368
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 20-01-2020 5:02:26 AM
+
+Message: HandlingInstanceID: 2b79ca20-01ea-403b-be41-cda308f4087f
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/20/2020 10:32:26
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 20-01-2020 5:02:26 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-132239701333576469
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239701333576469
+
+ProcessId: 2124
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-1
+
+Win32 ThreadId:19488
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 00000000-0000-0000-0000-000000000000
+
+Timestamp: 20-01-2020 5:02:26 AM
+
+Message: HandlingInstanceID: 732d3d30-558e-43da-85ca-9b9826b81e4a
+An exception of type 'Lucene.Net.Index.StaleReaderException' occurred and was caught.
+-------------------------------------------------------------------------------------
+01/20/2020 10:32:26
+Type : Lucene.Net.Index.StaleReaderException, Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181
+Message : IndexReader out of date and no longer valid for delete, undelete, or setNorm operations
+Source : Lucene.Net
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void AcquireWriteLock()
+HResult : -2146232800
+Stack Trace :    at Lucene.Net.Index.DirectoryReader.AcquireWriteLock() in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 897
+   at Lucene.Net.Index.IndexReader.DeleteDocument(Int32 docNum) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 983
+   at Lucene.Net.Index.IndexReader.DeleteDocuments(Term term) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 1025
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : DESKTOP-RNLROTF
+TimeStamp : 20-01-2020 5:02:26 AM
+FullName : Telerik.Sitefinity.Utilities, Version=12.1.7122.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-132239701333576469
+ThreadIdentity : Anonymous
+WindowsIdentity : HITESHI\jaypal.singh
+Requested URL : https://localhost:44326/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239701333576469
+
+ProcessId: 2124
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-2
+
+Win32 ThreadId:19124
+
+Extended Properties: 
+----------------------------------------

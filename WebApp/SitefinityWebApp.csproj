@@ -83,6 +83,9 @@
     <Reference Include="AWSSDK.SQS, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
       <HintPath>packages\AWSSDK.SQS.3.3.3.62\lib\net45\AWSSDK.SQS.dll</HintPath>
     </Reference>
+    <Reference Include="BT_Widgets">
+      <HintPath>ExtDll\BT_Widgets.dll</HintPath>
+    </Reference>
     <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
       <HintPath>packages\CsvHelper.2.2.2\lib\net40-client\CsvHelper.dll</HintPath>
     </Reference>
@@ -1522,12 +1525,6 @@
   <ItemGroup>
     <Folder Include="App_Data\Sitefinity\Logs\" />
     <Folder Include="Mvc\Scripts\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BT_Widgets\BT_Widgets.csproj">
-      <Project>{0dc993d5-2b17-4808-87b0-4d6e29122ba3}</Project>
-      <Name>BT_Widgets</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

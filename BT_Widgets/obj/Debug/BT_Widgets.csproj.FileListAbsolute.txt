@@ -272,4 +272,3 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\bin\Debug\Windo
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.csproj.CopyComplete
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.pdb
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\BT_Widgets\obj\Debug\BT_Widgets.csprojAssemblyReference.cache

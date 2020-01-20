@@ -2888,8 +2888,6 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\WindowsAzureTel
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\EnvDTE.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\WindowsAzureEventSource.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\stdole.dll
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.pdb
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.dll.config
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AngleSharp.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\AntiXssLibrary.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Autofac.xml
@@ -3109,7 +3107,7 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\ko\System.Spati
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\ru\System.Spatial.resources.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\zh-Hans\System.Spatial.resources.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\zh-Hant\System.Spatial.resources.dll
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csprojAssemblyReference.cache
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csproj.CopyComplete
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.pdb
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csprojAssemblyReference.cache
