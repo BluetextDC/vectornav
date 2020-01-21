@@ -451,6 +451,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Mvc\Controllers\AuthorController.cs" />
     <Compile Include="Mvc\Controllers\BT_ModuleTest_CtEmployeeController.cs" />
     <Compile Include="Mvc\Controllers\ContactUsController.cs" />
     <Compile Include="Mvc\Controllers\CTAController.cs" />
@@ -462,6 +463,8 @@
     <Compile Include="Mvc\Controllers\ListController.cs" />
     <Compile Include="Mvc\Controllers\PageSelectorInDesignerController.cs" />
     <Compile Include="Mvc\Controllers\SampleWidgetController.cs" />
+    <Compile Include="Mvc\Models\Author\AuthorModel.cs" />
+    <Compile Include="Mvc\Models\Author\AuthorViewModel.cs" />
     <Compile Include="Mvc\Models\BT_ModuleTest_CtEmployee\BT_ModuleTest_CtEmployeeModel.cs" />
     <Compile Include="Mvc\Models\BT_ModuleTest_CtEmployee\BT_ModuleTest_CtEmployeeViewModel.cs" />
     <Compile Include="Mvc\Models\ContactUs\ContactUsModel.cs" />
@@ -520,6 +523,9 @@
     <EmbeddedResource Include="Mvc\Views\List\DesignerView.ManageItems.json" />
     <EmbeddedResource Include="Mvc\Views\List\DesignerView.Settings.cshtml" />
     <EmbeddedResource Include="Mvc\Views\List\Index.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\Author\Author.Default.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\Author\DesignerView.Simple.cshtml" />
+    <EmbeddedResource Include="Mvc\Views\Author\DesignerView.Simple.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -528,7 +534,7 @@
   <ItemGroup>
     <Content Include="Mvc\Controllers\readme.txt" />
     <Content Include="Mvc\Models\readme.txt" />
-    <Content Include="Mvc\Scripts\Author\designerview-simple.js" />
+    <EmbeddedResource Include="Mvc\Scripts\Author\designerview-simple.js" />
     <EmbeddedResource Include="Mvc\Scripts\PageSelectorInDesigner\designerview-defaultDesignerView.js" />
     <EmbeddedResource Include="Mvc\Scripts\SampleWidget\designerview-simple.js" />
     <EmbeddedResource Include="Mvc\Scripts\BT_ModuleTest_CtEmployee\designerview-simple.js" />

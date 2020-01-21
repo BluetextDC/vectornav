@@ -1,7 +1,69 @@
 ----------------------------------------
-ActivityId: a19af3ad-1461-4419-a61d-7dee1cdfa33b
+ActivityId: ee646a58-3b61-40cc-9493-9a6d9223af90
 
-Timestamp: 1/17/2020 10:57:29 AM
+Timestamp: 1/20/2020 7:44:00 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-7-132239788644239764
+
+ProcessId: 14076
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:21152
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 18e52288-d2fc-4af6-bcc3-522a3d0a2cd4
+
+Timestamp: 1/20/2020 8:15:40 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132239809767808627
+
+ProcessId: 20940
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:13672
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 26d4fd26-765b-4488-811b-84fe6a4d1627
+
+Timestamp: 1/20/2020 8:26:54 AM
 
 Message: User login failed with exception: IDX10311: RequireNonce is 'true' (default) but validationContext.Nonce is null. A nonce cannot be validated. If you don't need to check the nonce, set OpenIdConnectProtocolValidator.RequireNonce to 'false'.
 
@@ -17,15 +79,666 @@ Title:
 
 Machine: DESKTOP-RNLROTF
 
-App Domain: /LM/W3SVC/2/ROOT-1-132237321605662851
+App Domain: /LM/W3SVC/2/ROOT-2-132239822632454519
 
-ProcessId: 6320
+ProcessId: 20940
 
 Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
 
 Thread Name: 
 
-Win32 ThreadId:18512
+Win32 ThreadId:3064
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: c2394cee-73ec-423f-ba3a-22a6b88e89ca
+
+Timestamp: 1/20/2020 8:32:35 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-4-132239826657710725
+
+ProcessId: 20940
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:21708
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 30bb3548-0d49-47e2-ac44-2c84b96bb2ef
+
+Timestamp: 1/20/2020 8:48:29 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-7-132239836952007806
+
+ProcessId: 20940
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:20408
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 50954e22-fd2d-4746-9ed8-482cb71b9e46
+
+Timestamp: 1/20/2020 8:48:34 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-7-132239836952007806
+
+ProcessId: 20940
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:23776
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: b5155ef6-1aa4-430c-96fe-e057c69cecb5
+
+Timestamp: 1/20/2020 9:05:11 AM
+
+Message: Identity Server: UnexpectedError
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-13-132239844698330586
+
+ProcessId: 20940
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:24740
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: b8c16fd5-84a3-4c9b-ad8a-49a09e278ddb
+
+Timestamp: 1/20/2020 9:05:13 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-13-132239844698330586
+
+ProcessId: 20940
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:12736
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 45ffc2e5-5aa3-4bb4-9f77-87a084a71a55
+
+Timestamp: 1/20/2020 9:41:17 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132239868427244326
+
+ProcessId: 23688
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:25244
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: aaacf9d8-79f1-4faf-9475-4b35d39605cb
+
+Timestamp: 1/20/2020 11:37:59 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-4-132239938656572485
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:25400
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 4b085cb1-c733-4c58-96c1-7718142f87f3
+
+Timestamp: 1/20/2020 11:38:17 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-4-132239938656572485
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:2120
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 38a06dd4-4ff1-41ea-ac15-cda33637942b
+
+Timestamp: 1/20/2020 11:38:33 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-4-132239938656572485
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:18768
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: a1144ca6-435c-4ad7-8874-f09ee9d12fd8
+
+Timestamp: 1/20/2020 11:38:35 AM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-4-132239938656572485
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:25976
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 4cf3f253-9900-4ef7-a20f-a6668ce55465
+
+Timestamp: 1/20/2020 11:51:53 AM
+
+Message: User login failed with exception: IDX10311: RequireNonce is 'true' (default) but validationContext.Nonce is null. A nonce cannot be validated. If you don't need to check the nonce, set OpenIdConnectProtocolValidator.RequireNonce to 'false'.
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-7-132239945787737643
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:21132
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: e4083bb5-bb50-4492-9dd4-face452f6414
+
+Timestamp: 1/20/2020 12:03:50 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239954161760086
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:28480
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: aaf4c409-62f9-4511-b2f0-1dd9623ab727
+
+Timestamp: 1/20/2020 12:04:06 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239954161760086
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:26288
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 82e79e0f-ae81-4aa7-af76-728d7efb9ecf
+
+Timestamp: 1/20/2020 12:04:09 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-9-132239954161760086
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:21884
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 7abe438b-6487-4b10-8a0c-afb234b515f1
+
+Timestamp: 1/20/2020 12:20:39 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-13-132239964246318442
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:24772
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: e08c11d6-e8d4-495d-beb1-44e45e7bf639
+
+Timestamp: 1/20/2020 12:20:48 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-13-132239964246318442
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:21612
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 9f0b4983-6ad1-4010-9d39-81e5167496c2
+
+Timestamp: 1/20/2020 12:21:05 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-13-132239964246318442
+
+ProcessId: 26764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:19264
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 3007e9a9-4771-4c71-86db-956fc27658a9
+
+Timestamp: 1/20/2020 12:33:56 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132239972147686940
+
+ProcessId: 29576
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:27448
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: fe3fec31-2f02-430b-9d85-891f635a028c
+
+Timestamp: 1/20/2020 12:34:00 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132239972147686940
+
+ProcessId: 29576
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:18696
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 05564141-059c-4576-913b-f24d874c32d2
+
+Timestamp: 1/20/2020 12:34:01 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132239972147686940
+
+ProcessId: 29576
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:27580
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 08607ec5-d8d5-4763-97c3-ab97138f0a9c
+
+Timestamp: 1/20/2020 12:34:02 PM
+
+Message: Identity Server: NoSignInCookie
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: DESKTOP-RNLROTF
+
+App Domain: /LM/W3SVC/2/ROOT-1-132239972147686940
+
+ProcessId: 29576
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:6576
 
 Extended Properties: 
 ----------------------------------------

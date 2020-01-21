@@ -2592,6 +2592,8 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\WebApp\obj\Debug\SitefinityWebApp.cs
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\WebApp\obj\Debug\SitefinityWebApp.csproj.CopyComplete
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\WebApp\obj\Debug\SitefinityWebApp.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\WebApp\obj\Debug\SitefinityWebApp.pdb
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Web.UI.Skins.dll
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Web.UI.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\SitefinityWebApp.ResourcePackages.Bootstrap4.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\SitefinityWebApp.ResourcePackages.Bootstrap4.pdb
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\SitefinityWebApp.dll.config
@@ -2871,7 +2873,6 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Sitefin
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Sitefinity.WebSecurity.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Web.Design.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Web.UI.dll
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Web.UI.Skins.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Windows.Controls.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Windows.Data.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Windows.Documents.Core.dll
@@ -3060,7 +3061,6 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Sitefin
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Sitefinity.SiteSync.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Sitefinity.Translations.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Sitefinity.Utilities.xml
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Web.UI.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Windows.Data.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Windows.Documents.xml
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\Telerik.Windows.Documents.Core.xml
@@ -3107,7 +3107,9 @@ D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\ko\System.Spati
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\ru\System.Spatial.resources.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\zh-Hans\System.Spatial.resources.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\zh-Hant\System.Spatial.resources.dll
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csprojAssemblyReference.cache
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csproj.CopyComplete
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.dll
 D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.pdb
-D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\obj\Debug\SitefinityWebApp.csprojAssemblyReference.cache
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.pdb
+D:\Jaypal\Projects\VectorNAV\BorisCode\Code\vectornav\WebApp\bin\BT_Widgets.dll.config
