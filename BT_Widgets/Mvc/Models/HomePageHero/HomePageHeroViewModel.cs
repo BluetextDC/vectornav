@@ -3,7 +3,8 @@
     public class HomePageHeroViewModel
     {
         public string Link { get; set;  }
-        public string Title_JpVM { get; set; }
+        public string Title_VM { get; set; }
+        public string Subtitle { get; set; }
         public string ListItem_ValueVM { get; set; }
 
 
@@ -24,5 +25,18 @@
         public string SelectedSizeUrl { get; set; }
         #endregion 
 
+
+
+        #region for Video 
+        /// <summary>
+        /// Gets or sets the Video title.
+        /// </summary>
+        public string Video { get; set; }
+
+        /// <summary>
+        /// Gets or sets the selected size Video URL.
+        /// </summary>
+        public string SelectedVideoSizeUrl { get; set; }
+        #endregion 
     }
 }

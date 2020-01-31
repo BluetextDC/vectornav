@@ -1,0 +1,17 @@
+﻿<div id="list-settings">
+    <div>
+        <label>List title</label>
+        <input id="list-title" ng-model="properties.ListTitle.PropertyValue" type="text" />
+    </div>
+    <div>
+        <label>Choose list type:</label>
+        <label class="radio">
+            <input type="radio" ng-model="properties.ListType.PropertyValue" value="@BT_Widgets.ListMode.Numbers">
+            Numbers
+        </label>
+        <label class="radio">
+            <input type="radio" ng-model="properties.ListType.PropertyValue" value="@BT_Widgets.ListMode.Bullets">
+            Bullets
+        </label>
+    </div>
+</div>

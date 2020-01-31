@@ -7,7 +7,7 @@ using Telerik.Sitefinity.Mvc;
 
 namespace BT_Widgets.MVC.Controllers
 {
-    [ControllerToolboxItem(Name = "Author", Title = "Author", SectionName = "Feather samples")]
+    [ControllerToolboxItem(Name = "Author", Title = "Author", SectionName = "Test_BT")]
     public class AuthorController : Controller
     {
         [TypeConverter(typeof(ExpandableObjectConverter))]

@@ -1,0 +1,76 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@{
+    int cnt = 0;
+    string className = "carousel-item active";
+
+    int count = 0;
+    string ActiveSlide = "active";
+}
+
+<main class="wraper home_page">
+    <section class="testimonial_sec">
+        <div class="container">
+            <div id="carouselTestimonial" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-0">
+
+                    @foreach (var listItem in ViewBag.ListItems_Obj)
+                    {
+                         if (count != 0)
+                            {
+                                ActiveSlide = "";
+                            }
+                        <li data-target="#carouselTestimonial" data-slide-to="@count" class="@ActiveSlide"></li>
+                        count++;
+                    }
+                    @*<li data-target="#carouselTestimonial" data-slide-to="1"></li>
+                        <li data-target="#carouselTestimonial" data-slide-to="2"></li>*@
+                </ol>
+                <div class="carousel-inner">
+
+                    @foreach (var listItem in ViewBag.ListItems_Obj)
+                    {
+                        if (cnt == 0)
+                        {
+                            className = "carousel-item active";
+                            cnt++;
+                        }
+                        else
+                        {
+                            className = "carousel-item";
+                        }
+
+                        <div class="@className">
+                            <div class="testimonial_content text-center">
+
+                                @if (!string.IsNullOrEmpty(listItem.SelectedSizeUrl))
+                                {
+
+                                    <img src="@listItem.SelectedSizeUrl" title="@listItem.ImageTitle" alt="@listItem.ImageAlternativeText" class="profile_pic img-fluid" />
+
+                                }
+
+                                <h2 class="text-uppercase">@listItem.title</h2>
+                                <p>@listItem.description</p>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@*@Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/jquery.min.js"), "head")*@
+@Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/bootstrap.bundle.min.js"), "bottom")
+
+
+
+
+
+
+
+
+

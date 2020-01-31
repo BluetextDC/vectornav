@@ -1,0 +1,191 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.TabbedListingContent.TabbedListingContentViewModel
+
+
+<main class="wraper product_page">
+
+
+
+    <section class="specification_sec">
+        <div class="container">
+            <div class="heading_h2 text-center">
+                <h2 class="text-uppercase">@Model.Title</h2>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <ul class="list-inline">
+                    <li class="list-inline-item" id="heading1">
+                        <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            @*<img src="~/ResourcePackages/BT/images/speci_01.svg" alt="icon" class="img-fluid">*@
+                            @if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
+                            {
+                                <img src="@Model.SelectedSizeUrl" title="@Model.ImageTitle" alt="@Model.ImageAlternativeText" class="img-fluid" />
+                            }
+                            <span>@Model.Label</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading2">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <img src="~/ResourcePackages/BT/images/speci_02.svg" alt="icon" class="img-fluid">
+                            <span>Attitude</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading3">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <img src="~/ResourcePackages/BT/images/speci_03.svg" alt="icon" class="img-fluid">
+                            <span>Accel</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading4">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <img src="~/ResourcePackages/BT/images/speci_04.svg" alt="icon" class="img-fluid">
+                            <span>Gyro</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading5">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            <img src="~/ResourcePackages/BT/images/speci_05.svg" alt="icon" class="img-fluid">
+                            <span>Mag</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading6">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            <img src="~/ResourcePackages/BT/images/speci_06.svg" alt="icon" class="img-fluid">
+                            <span>GNSS</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading7">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            <img src="~/ResourcePackages/BT/images/speci_07.svg" alt="icon" class="img-fluid">
+                            <span>Baro</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" id="heading8">
+                        <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                            <img src="~/ResourcePackages/BT/images/speci_08.svg" alt="icon" class="img-fluid">
+                            <span>Swap</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mobile_view_tabs" id="heading1">
+                    <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <img src="~/ResourcePackages/BT/images/speci_01.svg" alt="icon" class="img-fluid">
+                        <span>Navigation</span>
+                    </a>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                    <div class="table_view">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <p>Dynamic Pitch/ Roll Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Dynamic Heading Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Horizontal Position Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Velocity Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>IMU Data</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Navigation Data</p>
+                                    <span>.01°</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <p>Dynamic Pitch/ Roll Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Dynamic Heading Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Horizontal Position Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Velocity Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>IMU Data</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Navigation Data</p>
+                                    <span>.01°</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile_view_tabs" id="heading2">
+                    <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <img src="~/ResourcePackages/BT/images/speci_02.svg" alt="icon" class="img-fluid">
+                        <span>Attitude</span>
+                    </a>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                    b
+                </div>
+
+                <div class="mobile_view_tabs" id="heading3">
+                    <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <img src="~/ResourcePackages/BT/images/speci_03.svg" alt="icon" class="img-fluid">
+                        <span>Accel</span>
+                    </a>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                    c
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+@Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/bootstrap.bundle.min.js"), "bottom")
+
+@*<section class="width_promo_sec">
+        <div class="container">
+            <div class="heading_h2 text-center max100">
+                <h2 class="text-uppercase text-white">@Model.Title_JpVM</h2>
+                <p class="text-white">Subtitle </p>
+            </div>
+            <div>
+                Selected List  Value : @Model.ListItem_ValueVM
+            </div>
+            <div class="text-center">
+                @Html.Raw(Model.Link)
+            </div>
+            <div>
+                @if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
+                {
+                    <img src="@Model.SelectedSizeUrl" title="@Model.ImageTitle" alt="@Model.ImageAlternativeText" />
+                }
+            </div>
+
+        </div>
+    </section>*@
+
+
+
+

@@ -1,0 +1,75 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+<section class="contact_sec">
+    <div class="related_products">
+        <div class="container">
+            <div class="heading_h2 text-center">
+                <h2 class="text-uppercase mb-0">@ViewBag.ListTitle</h2>
+            </div>
+            <div class="only_show_mobile_related_product_slider" style="display:none">
+                <div id="relatedProSlider" class="w-100 carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators mb-0">
+                        <li data-target="#relatedProSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#relatedProSlider" data-slide-to="1"></li>
+                        <li data-target="#relatedProSlider" data-slide-to="2"></li>
+                        <li data-target="#relatedProSlider" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="box">
+                                <img src="~/ResourcePackages/BT/images/related01.png" alt="image" class="img-fluid">
+                                <h4>Lorem Ipsum Dolor 1</h4>
+                                <a href="#" class="right_arrow">Call To Action <img src="~/ResourcePackages/BT/images/right_icon.svg" alt="icon" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <img src="~/ResourcePackages/BT/images/related02.png" alt="image" class="img-fluid">
+                                <h4>Lorem Ipsum Dolor</h4>
+                                <a href="#" class="right_arrow">Call To Action <img src="~/ResourcePackages/BT/images/right_icon.svg" alt="icon" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <img src="~/ResourcePackages/BT/images/related03.png" alt="image" class="img-fluid">
+                                <h4>Lorem Ipsum Dolor</h4>
+                                <a href="#" class="right_arrow">Call To Action <img src="~/ResourcePackages/BT/images/right_icon.svg" alt="icon" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <img src="~/ResourcePackages/BT/images/related02.png" alt="image" class="img-fluid">
+                                <h4>Lorem Ipsum Dolor</h4>
+                                <a href="#" class="right_arrow">Call To Action <img src="~/ResourcePackages/BT/images/right_icon.svg" alt="icon" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_view_box">
+                <div class="row">
+                    @foreach (var listItem in ViewBag.ListItems_Obj)
+                    {
+                        <div class="col-lg-3 col-md-6">
+                            <div class="box" style="text-align: center;">
+                                @if (!string.IsNullOrEmpty(listItem.SelectedSizeUrl))
+                                {
+
+                                    <img src="@listItem.SelectedSizeUrl" title="@listItem.ImageTitle" alt="@listItem.ImageAlternativeText" class="img-fluid" />
+
+                                }
+                                <h4>@listItem.title</h4>
+                                @Html.Raw(listItem.CTALink)
+                                @*<a href="@Model.LinkURL" target="_blank" class="right_arrow"> @Model.LinkText <img src="~/ResourcePackages/BT/images/right_icon.svg" alt="icon" class="img-fluid"></a>*@
+                            </div>
+                        </div>
+                    }
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

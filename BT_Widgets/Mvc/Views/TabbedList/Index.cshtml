@@ -1,0 +1,349 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@{
+    int cnt = 0;
+    string className = "carousel-item active";
+
+    int count = 0;
+    string ActiveSlide = "active";
+}
+
+<main class="wraper product_page">
+    <section class="specification_sec">
+        <div class="container">
+            <div class="heading_h2 text-center">
+                <h2 class="text-uppercase"> @ViewBag.ListTitle</h2>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <ul class="list-inline">
+                    @foreach (var listItem in ViewBag.ListItems_Obj)
+                    {
+                        <li class="list-inline-item" id="heading1">
+                            <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <img src="images/speci_01.svg" alt="icon" class="img-fluid">
+                                <span>Navigation</span>
+                            </a>
+                        </li>
+                    }
+                    @*<li class="list-inline-item" id="heading2">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <img src="images/speci_02.svg" alt="icon" class="img-fluid">
+                                <span>Attitude</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" id="heading3">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <img src="images/speci_03.svg" alt="icon" class="img-fluid">
+                                <span>Accel</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" id="heading4">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <img src="images/speci_04.svg" alt="icon" class="img-fluid">
+                                <span>Gyro</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" id="heading5">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                <img src="images/speci_05.svg" alt="icon" class="img-fluid">
+                                <span>Mag</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" id="heading6">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                <img src="images/speci_06.svg" alt="icon" class="img-fluid">
+                                <span>GNSS</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" id="heading7">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                <img src="images/speci_07.svg" alt="icon" class="img-fluid">
+                                <span>Baro</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item" id="heading8">
+                            <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                <img src="images/speci_08.svg" alt="icon" class="img-fluid">
+                                <span>Swap</span>
+                            </a>
+                        </li>*@
+                </ul>
+
+                <div class="mobile_view_tabs" id="heading1">
+                    <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <img src="images/speci_01.svg" alt="icon" class="img-fluid">
+                        <span>Navigation</span>
+                    </a>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                    <div class="table_view">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <p>Dynamic Pitch/ Roll Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Dynamic Heading Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Horizontal Position Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Velocity Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>IMU Data</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Navigation Data</p>
+                                    <span>.01°</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <p>Dynamic Pitch/ Roll Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Dynamic Heading Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Horizontal Position Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Velocity Accuracy</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>IMU Data</p>
+                                    <span>.01°</span>
+                                </div>
+                                <div class="item">
+                                    <p>Navigation Data</p>
+                                    <span>.01°</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile_view_tabs" id="heading2">
+                    <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <img src="images/speci_02.svg" alt="icon" class="img-fluid">
+                        <span>Attitude</span>
+                    </a>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                    b
+                </div>
+
+                <div class="mobile_view_tabs" id="heading3">
+                    <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <img src="images/speci_03.svg" alt="icon" class="img-fluid">
+                        <span>Accel</span>
+                    </a>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                    c
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+
+
+
+
+
+@*@{
+        int cnt = 0;
+        string className = "carousel-item active";
+
+        int count = 0;
+        string ActiveSlide = "active";
+    }
+
+    <main class="wraper home_page">
+        <section class="specification_sec">
+            <div class="container">
+                <div class="heading_h2 text-center">
+                    <h2 class="text-uppercase">Specifications</h2>
+                </div>
+                @foreach (var listItem in ViewBag.ListItems_Obj)
+                {
+                    <div class="accordion" id="accordionExample">
+                        <ul class="list-inline">
+                            <li class="list-inline-item" id="heading1">
+                                <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    @if (!string.IsNullOrEmpty(listItem.SelectedSizeUrl))
+                                    {
+
+                                        <img src="@listItem.SelectedSizeUrl" title="@listItem.ImageTitle" alt="@listItem.ImageAlternativeText" class="img-fluid" />
+
+                                    }
+                                    <span>@listItem.title</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading2">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <img src="images/speci_02.svg" alt="icon" class="img-fluid">
+                                    <span>Attitude</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading3">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <img src="images/speci_03.svg" alt="icon" class="img-fluid">
+                                    <span>Accel</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading4">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <img src="images/speci_04.svg" alt="icon" class="img-fluid">
+                                    <span>Gyro</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading5">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <img src="images/speci_05.svg" alt="icon" class="img-fluid">
+                                    <span>Mag</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading6">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    <img src="images/speci_06.svg" alt="icon" class="img-fluid">
+                                    <span>GNSS</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading7">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    <img src="images/speci_07.svg" alt="icon" class="img-fluid">
+                                    <span>Baro</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="heading8">
+                                <a class="tabs_link collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    <img src="images/speci_08.svg" alt="icon" class="img-fluid">
+                                    <span>Swap</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile_view_tabs" id="heading1">
+                            <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                @if (!string.IsNullOrEmpty(listItem.SelectedSizeUrl))
+                                {
+
+                                    <img src="@listItem.SelectedSizeUrl" title="@listItem.ImageTitle" alt="@listItem.ImageAlternativeText" class="img-fluid" />
+
+                                }
+                                <span>@listItem.title</span>
+                            </a>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                            <div class="table_view">
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <p>@listItem.description</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Dynamic Heading Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Horizontal Position Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Velocity Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>IMU Data</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Navigation Data</p>
+                                            <span>.01°</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <p>Dynamic Pitch/ Roll Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Dynamic Heading Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Horizontal Position Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Velocity Accuracy</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>IMU Data</p>
+                                            <span>.01°</span>
+                                        </div>
+                                        <div class="item">
+                                            <p>Navigation Data</p>
+                                            <span>.01°</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mobile_view_tabs" id="heading2">
+                            <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <img src="images/speci_02.svg" alt="icon" class="img-fluid">
+                                <span>Attitude</span>
+                            </a>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                            b
+                        </div>
+
+                        <div class="mobile_view_tabs" id="heading3">
+                            <a class="tabs_link" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <img src="images/speci_03.svg" alt="icon" class="img-fluid">
+                                <span>Accel</span>
+                            </a>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                            c
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    </main>*@
+@*@Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/jquery.min.js"), "head")*@
+@Html.Script(Url.WidgetContent("~/ResourcePackages/BT/js/bootstrap.bundle.min.js"), "bottom")
+
+
+
+
+
+
+
+
+

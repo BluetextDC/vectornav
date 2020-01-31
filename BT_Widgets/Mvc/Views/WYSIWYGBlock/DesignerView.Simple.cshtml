@@ -1,0 +1,12 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<div class="form-group">
+    <sf-html-field class="kendo-content-block"
+                   sf-images-settings="@SettingsHelpers.GetMediaSettings("Image")"
+                   sf-videos-settings="@SettingsHelpers.GetMediaSettings("Video")"
+                   sf-documents-settings="@SettingsHelpers.GetMediaSettings("Document")"
+                   sf-model="properties.RichText.PropertyValue">
+    </sf-html-field>
+</div>
+

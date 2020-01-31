@@ -2,29 +2,56 @@
 @Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
 @Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
 
+
 @model BT_Widgets.Mvc.Models.HomePageHero.HomePageHeroViewModel
 
-<section class="width_promo_sec">
-    <div class="container">
-        <div class="heading_h2 text-center max100">
-            <h2 class="text-uppercase text-white">@Model.Title_JpVM</h2>
-            <p class="text-white">Subtitle </p>
-        </div>
-        <div>
-            Selected List  Value : @Model.ListItem_ValueVM
-        </div>
-        <div class="text-center">
-            @Html.Raw(Model.Link)
-        </div>
-        <div>
-            @if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
-            {
-                <img src="@Model.SelectedSizeUrl" title="@Model.ImageTitle" alt="@Model.ImageAlternativeText" />
-            }
-        </div>
+@{
+    //string HomeImage = "";// "/ResourcePackages/BT/images/banner_bg.jpg";
+    // string VideoURL = "";// "/ResourcePackages/BT/images/banner_video.mp4";
 
-    </div>
-</section>
+
+
+    if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
+    {
+        string HomeImage = Model.SelectedSizeUrl;
+        string VideoURL = "";
+    }
+
+
+
+    if (!string.IsNullOrEmpty(Model.SelectedVideoSizeUrl))
+    {
+        string VideoURL = Model.SelectedVideoSizeUrl;
+        string HomeImage = "";
+    }
+
+
+}
+    <body class="front_page">
+       
+        @Model.ListItem_ValueVM
+        <main class="wraper home_page">
+            <section class="banner_sec">
+                <video width="100%" height="100%" id="myVideo" poster="@HomeImage" autoplay loop muted>
+                    <source src="@VideoURL" type="video/mp4">
+                </video>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-6">
+                            <div class="content">
+                                <h1 class="text-uppercase">@Model.Title_VM</h1>
+                                <p>@Model.Subtitle </p>
+                                @Html.Raw(Model.Link)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+
+
 
 
 

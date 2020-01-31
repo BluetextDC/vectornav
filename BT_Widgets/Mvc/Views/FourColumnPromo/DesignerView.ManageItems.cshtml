@@ -1,0 +1,62 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+
+<div id="list-items">
+
+
+    <div data-ng-repeat="item in listItemsObj" class="form-group">
+        <div class="row">
+            <div class="col-md-4">
+                <label class="form-label" ng-bind="item.title"></label>
+
+            </div>
+            <div class="col-md-4">
+                @*<label class="form-label" ng-bind="item.description"></label>*@
+
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-danger" ng-click="deleteListItem($index)">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="newListItem" id="newListItem" placeholder="Enter title" ng-model="newListItem" />
+
+            </div>
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="newDescription" id="newDescription" placeholder="Enter description" ng-model="newDescription" />
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="form-group">
+    <expander expander-title="Link">
+        <sf-link-selector sf-link-html="currentLink" sf-selected-item="proxy.selectedItem" sf-editor-content="editorContent">
+        </sf-link-selector>
+    </expander>
+</div>
+
+<div class="form-group">
+    <expander expander-title="Select Image">
+        <sf-image-field class="sf-Media--info modal-settings modal-settings-space"
+                        sf-model="properties.ImageId_Single.PropertyValue"
+                        sf-image="selectedImage"
+                        sf-provider="properties.ImageProviderName.PropertyValue"
+                        sf-media-settings="@SettingsHelpers.GetMediaSettings("Image")"
+                        id="newImageId"></sf-image-field>
+    </expander>
+</div>
+
+<div style="clear:both"></div>
+<div class="form-group" style="margin-top: 20px">
+    <button class="btn btn-primary" id="add-list-item" ng-click="addListItem()">Add</button>
+</div>

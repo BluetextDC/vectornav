@@ -1,0 +1,11 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.WYSIWYGBlock.WYSIWYGBlockViewModel
+
+
+<div class="text-center">
+    @Html.Raw(Model.RichText)
+</div>
+

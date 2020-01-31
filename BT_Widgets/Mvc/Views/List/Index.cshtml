@@ -2,8 +2,8 @@
     @{
         string openingTag;
         string closingTag;
-        
-        
+
+
         if (@ViewBag.ListType == BT_Widgets.ListMode.Bullets)
         {
             openingTag = "<ul>";
@@ -14,18 +14,37 @@
             openingTag = "<ol>";
             closingTag = "</ol>";
         }
-        
+
         <h2>
             @ViewBag.ListTitle
         </h2>
-        
+
         @Html.Raw(openingTag)
 
-        foreach (var listItem in ViewBag.ListItems)
+        foreach (var listItem in ViewBag.ListItems_Obj)
         {
-            <li>@listItem</li>
+            <li>@listItem.title</li>
+            <li>@listItem.description</li>
+            
         }
-    
+
         @Html.Raw(closingTag)
+
+        foreach (var listItem in ViewBag.ListItems_Obj)
+        {
+            if (!string.IsNullOrEmpty(listItem.CTALink))
+            {
+                <div>
+                    @Html.Raw(listItem.CTALink)
+                </div>
+            }
+            if (!string.IsNullOrEmpty(listItem.SelectedSizeUrl))
+            {
+                <div>
+                    <img src="@listItem.SelectedSizeUrl" title="@listItem.ImageTitle" alt="@listItem.ImageAlternativeText" />
+                </div>
+            }
+        }
+
     }
 </div>

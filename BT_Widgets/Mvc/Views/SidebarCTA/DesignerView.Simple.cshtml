@@ -1,0 +1,15 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<div class="form-group">
+    <expander expander-title="Link">
+        <sf-link-selector sf-link-html="currentLink" sf-selected-item="proxy.selectedItem" sf-editor-content="editorContent">
+        </sf-link-selector>
+    </expander>
+</div>
+<div class="form-group">
+    <label for="txtTitle" class="form-label">Title</label>
+    <input id="txtTitle" type="text" class="form-control" ng-model="properties.Title_Jp.PropertyValue" />
+</div>
+
+

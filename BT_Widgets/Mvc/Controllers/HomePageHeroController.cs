@@ -7,7 +7,7 @@ using Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Controllers.Attributes;
 namespace BT_Widgets.Mvc.Controllers
 {
     //[EnhanceViewEngines]
-    [ControllerToolboxItem(Name = "HomePageHero", Title = "HomePageHero", SectionName = "Test_BT")]
+    [ControllerToolboxItem(Name = "HomePageHero", Title = "Homepage Hero", SectionName = "Blue Text")]
     public class HomePageHeroController : Controller
     {
         [TypeConverter(typeof(ExpandableObjectConverter))]
@@ -30,11 +30,10 @@ namespace BT_Widgets.Mvc.Controllers
 
         public ActionResult Index()
         {
-
             var m_object = this.Model.GetViewModel();
             if (m_object.Link != null && m_object.Link.Trim().Length > 0)
             {
-                m_object.Link = m_object.Link.Replace("href=", " class=\"btn btn_border3\" href=");
+                m_object.Link = m_object.Link.Replace("href=", " class=\"btn btn_border2\" href=");
             }
             return this.View("HomePageHero." + this.Template, m_object);
         }

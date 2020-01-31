@@ -1,0 +1,32 @@
+﻿@using Telerik.Sitefinity.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<div class="form-group">
+    <expander expander-title="Link">
+        <sf-link-selector sf-link-html="currentLink" sf-selected-item="proxy.selectedItem" sf-editor-content="editorContent">
+        </sf-link-selector>
+    </expander>
+</div>
+<div class="form-group">
+    <label for="txtTitle" class="form-label">Title</label>
+    <input id="txtTitle" type="text" class="form-control" ng-model="properties.Title_Jp.PropertyValue" />
+</div>
+@*<div class="form-group">
+        <label for="drpList" class="form-label">Select Any One</label>
+        <select id="drpList" class="form-control" ng-model="properties.ListItem_Value.PropertyValue">
+            <option value="red">Red</option>
+            <option value="mixed-red">Mixed-Red</option>
+            <option value="black">Black</option>
+        </select>
+    </div>*@
+<div class="form-group">
+    <expander expander-title="Select Image">
+        <sf-image-field class="sf-Media--info modal-settings modal-settings-space"
+                        sf-model="properties.ImageId.PropertyValue"
+                        sf-image="selectedImage"
+                        sf-provider="properties.ImageProviderName.PropertyValue"
+                        sf-media-settings="@SettingsHelpers.GetMediaSettings("Image")"
+                        id="image-field"></sf-image-field>
+    </expander>
+</div>
+

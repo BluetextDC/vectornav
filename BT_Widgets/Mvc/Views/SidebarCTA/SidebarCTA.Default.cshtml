@@ -1,0 +1,34 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.SidebarCTA.SidebarCTAViewModel
+
+    <main class="wraper resource_detail_page">
+        <section class="brochure_sec">
+            <div class="container">
+                <div class="row">
+                    @*<div class="col-lg-8 col-md-6">
+                        <div class="left_sec">
+
+                        </div>
+                    </div>*@
+                    <div class="col-lg-4 col-md-6">
+                        <aside class="right_sec">
+                            <div class="common_bx">
+                                <div class="heading_h3">
+                                    <h3>@Model.Title_JpVM</h3>
+                                </div>
+                                @Html.Raw(Model.Link)
+                            </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+

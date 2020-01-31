@@ -1,0 +1,35 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+    <div class="about_page">
+        <section class="validation_sec">
+            <div class="container">
+                <div class="heading_h2 text-center">
+                    <h2 class="text-uppercase mb-0 text-white">@ViewBag.ListTitle</h2>
+                </div>
+                <div class="row">
+                        @foreach (var listItem in ViewBag.ListItems_Obj)
+                        {
+                            <div class="col-md-3 col-lg-2">
+                                <div class="item_box text-center text-white">
+                                    <h3>@listItem.title</h3>
+                                    <p>@listItem.description</p>
+                                </div>
+                            </div>
+                        }
+
+                       
+                    </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+

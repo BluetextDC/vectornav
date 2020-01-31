@@ -1,0 +1,35 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/bootstrap.min.css"), "head")
+@Html.StyleSheet(Url.WidgetContent("~/ResourcePackages/BT/css/custom.min.css"), "head")
+
+@model BT_Widgets.Mvc.Models.InlinePromo.InlinePromoViewModel
+
+<main class="wraper resource_detail_page">
+    <section class="brochure_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <div class="left_sec">
+                        <div class="related_resources">
+                            <div class="media">
+                                @if (!string.IsNullOrEmpty(Model.SelectedSizeUrl))
+                                {
+                                    <img src="@Model.SelectedSizeUrl" title="@Model.ImageTitle" alt="@Model.ImageAlternativeText" class="img-fluid" />
+                                }
+                                <div class="media-body">
+                                    <h3>@Model.Title_JpVM</h3>
+                                    @Html.Raw(Model.Link)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
